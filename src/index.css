@@ -1,0 +1,45 @@
+@import url('@/css/fonts.css');
+@import url('@/css/colors.css');
+
+body
+{
+  font-family: var(--kai-font-family);
+  color: var(--kai-black);
+}
+
+h1
+{
+  font-size: var(--kai-font-size-h1);
+  font-weight: var(--kai-font-weight-bold);
+  color: var(--kai-black);
+}
+
+h2
+{
+  font-size: var(--kai-font-size-h2);
+  font-weight: var(--kai-font-weight-bold);
+  color: var(--kai-black);
+}
+
+h3
+{
+  font-size: var(--kai-font-size-h3);
+  font-weight: var(--kai-font-weight-bold);
+  color: var(--kai-darkgrey);
+  text-transform: uppercase;
+}
+
+h4
+{
+  font-size: var(--kai-font-size-h4);
+  font-weight: var(--kai-font-weight-bold);
+  color: var(--kai-darkgrey);
+  text-transform: uppercase;
+}
+
+p
+{
+  font-size: var(--kai-font-size-paragraph);
+  font-weight: var(--kai-font-weight-normal);
+  color: var(--kai-black);
+}
