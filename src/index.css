@@ -1,6 +1,11 @@
 @import url('@/css/fonts.css');
 @import url('@/css/colors.css');
 
+*
+{
+  box-sizing: border-box;
+}
+
 body
 {
   font-family: var(--kai-font-family);
