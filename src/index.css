@@ -27,14 +27,16 @@ h3
   font-weight: var(--kai-font-weight-bold);
   color: var(--kai-darkgrey);
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 h4
 {
   font-size: var(--kai-font-size-h4);
-  font-weight: var(--kai-font-weight-bold);
+  font-weight: var(--kai-font-weight-semi-bold);
   color: var(--kai-darkgrey);
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 p
@@ -42,4 +44,39 @@ p
   font-size: var(--kai-font-size-paragraph);
   font-weight: var(--kai-font-weight-normal);
   color: var(--kai-black);
+}
+
+p.footnote
+{
+  font-size: var(--kai-font-size-footnote);
+  font-weight: var(--kai-font-weight-medium);
+  color: var(--kai-darkgrey);
+  text-align: right;
+}
+
+li
+{
+  font-size: var(--kai-font-size-paragraph);
+  font-weight: var(--kai-font-weight-normal);
+  color: var(--kai-black);
+}
+
+a
+{
+  text-decoration: none;
+  color: var(--kai-black);
+}
+
+a:after
+{
+  content: '→';
+  margin-left: 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+a:hover:after
+{
+  transform: scaleX(1.3);
 }
