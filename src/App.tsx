@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import ListContent from './components/list-content.tsx';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h1>Temporal</h1>
-      <h2>Linear Algebra</h2>
-
-    </>
+    <section className="section-content">
+      <div className="div-layer-text">
+        <ListContent title="Books 2023" listItems={["The Everything Store, Brad Stone", "The Way of the Superior Man, David Deida"]} />
+      </div>
+    </section>
   )
 }
 
-export default App
+export default App;
