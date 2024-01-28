@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <section className="section-content">
-      <div className="div-layer-text">
-        <h3>KAI ZHENG</h3>
+    <section className="content">
+      <div className="layer-text">
+        <h3>Kai Zheng</h3>
       </div>
     </section>
   )

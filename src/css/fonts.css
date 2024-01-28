@@ -64,12 +64,21 @@
 :root
 {
   --kai-font-family: 'Manrope', sans-serif;
+
   --kai-font-size-h1: 2.5em;
   --kai-font-size-h2: 2em;
   --kai-font-size-h3: 1.5em;
   --kai-font-size-h4: 0.8em;
   --kai-font-size-paragraph: 1.25em;
   --kai-font-size-footnote: 0.8em;
+
+  --kai-line-height-h1: 4rem;
+  --kai-line-height-h2: 3em;
+  --kai-line-height-h3: 2em;
+  --kai-line-height-h4: 1.5em;
+  --kai-line-height-paragraph: 2em;
+  --kai-line-height-footnote: 1.5em;
+
   --kai-font-weight-extra-light: 200;
   --kai-font-weight-light: 300;
   --kai-font-weight-normal: 400;

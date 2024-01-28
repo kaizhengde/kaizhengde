@@ -15,6 +15,7 @@ body
 h1
 {
   font-size: var(--kai-font-size-h1);
+  line-height: var(--kai-line-height-h1);
   font-weight: var(--kai-font-weight-bold);
   color: var(--kai-black);
 }
@@ -22,6 +23,7 @@ h1
 h2
 {
   font-size: var(--kai-font-size-h2);
+  line-height: var(--kai-line-height-h2);
   font-weight: var(--kai-font-weight-bold);
   color: var(--kai-black);
 }
@@ -29,6 +31,7 @@ h2
 h3
 {
   font-size: var(--kai-font-size-h3);
+  line-height: var(--kai-line-height-h3);
   font-weight: var(--kai-font-weight-bold);
   color: var(--kai-darkgrey);
   text-transform: uppercase;
@@ -38,6 +41,7 @@ h3
 h4
 {
   font-size: var(--kai-font-size-h4);
+  line-height: var(--kai-line-height-h4);
   font-weight: var(--kai-font-weight-semi-bold);
   color: var(--kai-darkgrey);
   text-transform: uppercase;
@@ -47,21 +51,15 @@ h4
 p
 {
   font-size: var(--kai-font-size-paragraph);
+  line-height: var(--kai-line-height-paragraph);
   font-weight: var(--kai-font-weight-normal);
   color: var(--kai-black);
-}
-
-p.footnote
-{
-  font-size: var(--kai-font-size-footnote);
-  font-weight: var(--kai-font-weight-medium);
-  color: var(--kai-darkgrey);
-  text-align: right;
 }
 
 li
 {
   font-size: var(--kai-font-size-paragraph);
+  line-height: var(--kai-line-height-paragraph);
   font-weight: var(--kai-font-weight-normal);
   color: var(--kai-black);
 }

@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <section className="section-content">
-      <div className="div-layer-text">
-        <h4>LAST UPDATE JAN 24 &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp; YOU ARE BEAUTIFUL</h4>
+    <section className="content">
+      <div className="layer-text">
+        <h4>Last Update Jan 24 &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp; You Are Beautiful</h4>
       </div>
     </section>
   )

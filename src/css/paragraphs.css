@@ -1,0 +1,8 @@
+p.footnote
+{
+  font-size: var(--kai-font-size-footnote);
+  line-height: var(--kai-line-height-footnote);
+  font-weight: var(--kai-font-weight-medium);
+  color: var(--kai-darkgrey);
+  text-align: right;
+}

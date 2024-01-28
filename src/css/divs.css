@@ -1,4 +1,4 @@
-.div-layer-text
+div.layer-text
 {
   display: flex;
   flex-direction: column;
@@ -10,4 +10,12 @@
   max-width: 900px;
   position: relative;
   background-color: var(--kai-lightgrey);
+}
+
+div.flex-horizontal
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
