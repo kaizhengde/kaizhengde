@@ -1,4 +1,6 @@
 import ListContent from '@/components/content/list-content';
+import TextContent from '@/components/content/text-content';
+import Item from '@/components/item/item';
 import { useNavigate } from 'react-router-dom';
 
 const HomeContents = () => {
@@ -10,72 +12,69 @@ const HomeContents = () => {
         <ListContent
           title="Currently"
           listItems={[
-            <a href="" onClick={() => navigate("/linear-algebra")}>{"Linear Algebra (HS23 G-08)"}</a>,
-            <a href="">{"BSc Thesis"}</a>,
+            <Item label="Linear Algebra (HS23 G-08)" onClick={() => navigate("/linear-algebra")} />,
+            <Item label="BSc Thesis" onClick={() => navigate("/thesis")} />,
           ]}
         />
 
-        <ListContent
+        <TextContent
           title="Nice Quote"
-          listItems={[
-            "You have power over your mind—not outside events. Realize this, and you will find strength.*"
-          ]}
+          text="You have power over your mind—not outside events. Realize this, and you will find strength.*"
           footnote="Marcus Aurelius, Roman emperor (121-180 AD)"
         />
 
         <ListContent
           title="Writings"
           listItems={[
-
           ]}
         />
 
         <ListContent
           title="Nice Books"
           listItems={[
-            "Meditations, Marcus Aurelius",
-            "赢家法则, 博多舍费尔",
-            "Trotzdem Ja zum Leben sagen, Viktor E. Frankl",
-            <a href="">{"Books 2024"}</a>,
-            <a href="">{"Books 2023"}</a>,
+            <Item label="Meditations, Marcus Aurelius" />,
+            <Item label="赢家法则, 博多舍费尔" />,
+            <Item label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
+            <Item label="Books 2024" href="#" />,
+            <Item label="Books 2023" href="#" />,
           ]}
         />
 
         <ListContent
           title="Current Fascinations"
           listItems={[
-            "Yoga & Calisthenics",
-            "Living with 100L space for all belongings",
-            "Reading about and interacting with the world",
+            <Item label="Yoga & Calisthenics" />,
+            <Item label="Living with 100L space for all belongings" />,
+            <Item label="Reading about and interacting with the world" />,
           ]}
         />
 
         <ListContent
           title="I Look Up To"
           listItems={[
-            "Helmut Schmidt",
-            "Marcus Aurelius",
-            "Viktor E. Frankl",
-            "Eliud Kipchoge",
+            <Item label="Helmut Schmidt" />,
+            <Item label="Marcus Aurelius" />,
+            <Item label="Viktor E. Frankl" />,
+            <Item label="Eliud Kipchoge" />,
           ]}
         />
 
         <ListContent
           title="My Donations"
           listItems={[
-            "Trees: 153",
-            "Education: €25",
-            "Ärzte ohne Grenzen, since 2022, €15/month",
-            "Rewind University, since 2019, €5/month",
-            "WWF Deutschland, since 2018, €5/month",
-            "PETA Deutschland, 2017-2019, €5/month",
+            <Item label="Trees: 153" />,
+            <Item label="Education: €25" />,
+            <Item label="Ärzte ohne Grenzen, since 2022, €15/month" />,
+            <Item label="Rewind University, since 2019, €5/month" />,
+            <Item label="WWF Deutschland, since 2018, €5/month" />,
+            <Item label="PETA Deutschland, 2017-2019, €5/month" />,
           ]}
         />
 
         <ListContent
           title="Contact"
           listItems={[
-            <a href="mailto:kai@kaizheng.de">{"kai@kaizheng.de"}</a>,
+            <Item label="kai@kaizheng.de" href="mailto:kai@kaizheng.de" />,
           ]}
         />
       </div>
