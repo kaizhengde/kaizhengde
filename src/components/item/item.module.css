@@ -5,3 +5,17 @@
   align-items: center;
   justify-content: center;
 }
+
+.aItem:after
+{
+  content: '→';
+  margin-left: 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.aItem:hover:after
+{
+  transform: scaleX(1.3);
+}
