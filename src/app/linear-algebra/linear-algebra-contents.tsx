@@ -1,18 +1,34 @@
-import TextContent from '@/components/content/text-content';
 import ListContent from '@/components/content/list-content';
 import Item from '@/components/item/item';
 import Items from '@/components/item/items';
+import Content from '@/components/content/content';
+import PriorityRectangle from '@/components/priority/priority-rectangle';
+import styles from './linear-algebra.module.css';
 
 const LinearAlgebraContents = () => {
   return (
     <section className="content">
       <div className="layer-text">
-        <TextContent
+        <Content
           title="Linear Algebra"
-          text="This page contains all the notes and materials used in the exercise sessions G-08. Linear algebra is a course that builds upon itself; vectors and matricies, for instance, are fundamental throughout the course. But also more complex concepts like rank, span, basis, kernel, bijection, determinant, and others are key components. I have marked definitions and topics with colours indicating their importance. Make sure you:*"
           footnote="If you are looking to have a pleasant experience with this course ^^"
         >
-        </TextContent>
+          <p>{"This page contains all the notes and materials used in the exercise sessions G-08. Linear algebra is a course that builds upon itself; vectors and matricies, for instance, are fundamental throughout the course. But also more complex concepts like rank, span, basis, kernel, bijection, determinant, and others are key components. I have marked definitions and topics with colours indicating their importance. Make sure you:*"}</p>
+          <div className={styles.divPriority}>
+            <div className={styles.divPriority}>
+              <PriorityRectangle color="red" />
+              <p className="footnote">{"Know in Sleep"}</p>
+            </div>
+            <div className={styles.divPriority}>
+              <PriorityRectangle color="black" />
+              <p className="footnote">{"Know Confidently"}</p>
+            </div>
+            <div className={styles.divPriority}>
+              <PriorityRectangle color="green" />
+              <p className="footnote">{"Know it Exists"}</p>
+            </div>
+          </div>
+        </Content>
 
         <ListContent
           title="Weekly Notes"

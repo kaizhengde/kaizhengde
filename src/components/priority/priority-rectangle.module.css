@@ -1,0 +1,24 @@
+.rectangle
+{
+  width: 13px;
+  height: 13px;
+  border-color: var(--kai-priority-black);
+  border-style: solid;
+  border-width: 2.5px;
+  margin-right: 8px;
+}
+
+.rectangle.green
+{
+  border-color: var(--kai-priority-green);
+}
+
+.rectangle.black
+{
+  border-color: var(--kai-priority-black);
+}
+
+.rectangle.red
+{
+  border-color: var(--kai-priority-red);
+}
