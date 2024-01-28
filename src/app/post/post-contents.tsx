@@ -1,6 +1,11 @@
+import { PostData } from '@/cms/types/post-data';
 import { useNavigate } from 'react-router-dom';
 
-const PostContents = () => {
+interface PostContentsProps {
+  postData: PostData;
+}
+
+const PostContents: React.FC<PostContentsProps> = ({ postData }) => {
   const navigate = useNavigate();
 
   return (

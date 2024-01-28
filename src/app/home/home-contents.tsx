@@ -26,6 +26,7 @@ const HomeContents = () => {
         <ListContent
           title="Writings"
           listItems={[
+            <Item label="Unsplash Map" onClick={() => navigate("/post/unsplash-map")} />,
           ]}
         />
 
