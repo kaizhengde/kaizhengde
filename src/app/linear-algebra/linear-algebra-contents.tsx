@@ -17,32 +17,32 @@ const LinearAlgebraContents = () => {
         <ListContent
           title="Weekly Notes"
           listItems={[
-            <Item label="Week 0 (21.09.2023)" href="linear-algebra/week-0.pdf" />,
-            <Item label="Week 1 (28.09.2023)" href="linear-algebra/week-1.pdf" />,
-            <Item label="Week 2 (05.10.2023)" href="linear-algebra/week-2.pdf" />,
+            <Item label="Week 0 (21.09.2023)" href="/linear-algebra/week-0.pdf" />,
+            <Item label="Week 1 (28.09.2023)" href="/linear-algebra/week-1.pdf" />,
+            <Item label="Week 2 (05.10.2023)" href="/linear-algebra/week-2.pdf" />,
             <Items itemProps={[
-              { label: "Week 3 (12.10.2023)", href: "linear-algebra/week-3.pdf" },
-              { label: "Diskmath", href: "linear-algebra/diskmath.pdf" }
+              { label: "Week 3 (12.10.2023)", href: "/linear-algebra/week-3.pdf" },
+              { label: "Diskmath", href: "https://polybox.ethz.ch/index.php/s/0TsTRfZBH4AMn9n" }
             ]} />,
-            <Item label="Week 4 (19.10.2023)" href="linear-algebra/week-4.pdf" />,
-            <Item label="Week 5 (26.10.2023)" href="linear-algebra/week-5.pdf" />,
+            <Item label="Week 4 (19.10.2023)" href="/linear-algebra/week-4.pdf" />,
+            <Item label="Week 5 (26.10.2023)" href="/linear-algebra/week-5.pdf" />,
             <Items itemProps={[
-              { label: "Week 6 (02.11.2023)", href: "linear-algebra/week-6.pdf" },
-              { label: "Test 1", href: "linear-algebra/test-1.pdf" }
+              { label: "Week 6 (02.11.2023)", href: "/linear-algebra/week-6.pdf" },
+              { label: "Test 1", href: "https://polybox.ethz.ch/index.php/s/AFvREyE0gDQzBZn" }
             ]} />,
-            <Item label="Week 7 (09.11.2023)" href="linear-algebra/week-7.pdf" />,
-            <Item label="Week 8 (16.11.2023)" href="linear-algebra/week-8.pdf" />,
+            <Item label="Week 7 (09.11.2023)" href="/linear-algebra/week-7.pdf" />,
+            <Item label="Week 8 (16.11.2023)" href="/linear-algebra/week-8.pdf" />,
             <Items itemProps={[
-              { label: "Week 9 (23.11.2023)", href: "linear-algebra/week-9.pdf" },
-              { label: "Test 2", href: "linear-algebra/test-2.pdf" }
+              { label: "Week 9 (23.11.2023)", href: "/linear-algebra/week-9.pdf" },
+              { label: "Test 2", href: "https://polybox.ethz.ch/index.php/s/AFvREyE0gDQzBZn" }
             ]} />,
-            <Item label="Week 10 (30.11.2023)" href="linear-algebra/week-10.pdf" />,
-            <Item label="Week 11 (07.12.2023)" href="linear-algebra/week-11.pdf" />,
-            <Item label="Week 12 (14.12.2023)" href="linear-algebra/week-12.pdf" />,
+            <Item label="Week 10 (30.11.2023)" href="/linear-algebra/week-10.pdf" />,
+            <Item label="Week 11 (07.12.2023)" href="/linear-algebra/week-11.pdf" />,
+            <Item label="Week 12 (14.12.2023)" href="/linear-algebra/week-12.pdf" />,
             <Items itemProps={[
-              { label: "Week Final (21.12.2023)", href: "linear-algebra/week-final.pdf" },
-              { label: "Test Final", href: "linear-algebra/test-final.pdf" },
-              { label: "Test Final", href: "#" },
+              { label: "Week Final (21.12.2023)", href: "/linear-algebra/week-final.pdf" },
+              { label: "Test Final", href: "https://polybox.ethz.ch/index.php/s/AFvREyE0gDQzBZn" },
+              { label: "Scripts", href: "https://polybox.ethz.ch/index.php/s/9sG2ce0UyC6Ot6m" },
             ]} />,
           ]}
         />
@@ -50,14 +50,16 @@ const LinearAlgebraContents = () => {
         <ListContent
           title="Links"
           listItems={[
-            <Item label="Vorlesungswebsite" href="#" />,
-            <Item label="Moodle" href="#" />,
+            <Item label="Vorlesungswebsite" href="https://ti.inf.ethz.ch/ew/courses/LA23/index.html" />,
+            <Item label="Moodle" href="https://moodle-app2.let.ethz.ch/course/view.php?id=20361" />,
           ]}
         />
 
         <ListContent
           title="Overview"
           listItems={[
+            <img className="parent-width" src="/linear-algebra/overview-content.png" alt="Overview Content" />,
+            <img className="parent-width" src="/linear-algebra/overview-plan.png" alt="Overview Plan" />,
           ]}
         />
       </div>
