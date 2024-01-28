@@ -1,3 +1,4 @@
+import postsData from '@/cms/data/posts-data';
 import ListContent from '@/components/content/list-content';
 import TextContent from '@/components/content/text-content';
 import Item from '@/components/item/item';
@@ -9,14 +10,6 @@ const HomeContents = () => {
   return (
     <section className="content">
       <div className="layer-text">
-        <ListContent
-          title="Currently"
-          listItems={[
-            <Item label="Linear Algebra (HS23 G-08)" onClick={() => navigate("/linear-algebra")} />,
-            <Item label="BSc Thesis" onClick={() => navigate("/thesis")} />,
-          ]}
-        />
-
         <TextContent
           title="Nice Quote"
           text="You have power over your mind—not outside events. Realize this, and you will find strength.*"
@@ -25,8 +18,16 @@ const HomeContents = () => {
 
         <ListContent
           title="Writings"
+          listItems={postsData.map(postData => (
+            <Item label={postData.title} onClick={() => navigate(`/post/${postData.id}`)} />
+          ))}
+        />
+
+        <ListContent
+          title="Projects & Teaching"
           listItems={[
-            <Item label="Unsplash Map" onClick={() => navigate("/post/unsplash-map")} />,
+            <Item label="Linear Algebra (HS23)" onClick={() => navigate("/linear-algebra")} />,
+            <Item label="Bachelor Thesis" onClick={() => navigate("/thesis")} />,
           ]}
         />
 

@@ -11,7 +11,8 @@ const PostContents: React.FC<PostContentsProps> = ({ postData }) => {
   return (
     <section className="content">
       <div className="layer-text">
-
+        <h2>{postData.title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: postData.content }} />
       </div>
     </section>
   )

@@ -74,8 +74,8 @@ const LinearAlgebraContents = () => {
         <ListContent
           title="Overview"
           listItems={[
-            <img className="parent-width" src="/linear-algebra/overview-content.png" alt="Overview Content" />,
-            <img className="parent-width" src="/linear-algebra/overview-plan.png" alt="Overview Plan" />,
+            <img width="100%" src="/linear-algebra/overview-content.png" alt="Overview Content" />,
+            <img width="100%" src="/linear-algebra/overview-plan.png" alt="Overview Plan" />,
           ]}
         />
       </div>

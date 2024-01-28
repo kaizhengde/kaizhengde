@@ -13,7 +13,7 @@ const Content: React.FC<ContentProps> = ({
 }) => {
   return (
     <div className={styles.div}>
-      <h4>{title}</h4>
+      <h5>{title}</h5>
       {children}
       <div>
         {footnote && <p className="footnote">{`* ${footnote}`}</p>}

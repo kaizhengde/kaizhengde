@@ -16,7 +16,7 @@ h1
 {
   font-size: var(--kai-font-size-h1);
   line-height: var(--kai-line-height-h1);
-  font-weight: var(--kai-font-weight-bold);
+  font-weight: var(--kai-font-weight-semi-bold);
   color: var(--kai-black);
   letter-spacing: 0.02rem;
 }
@@ -25,7 +25,7 @@ h2
 {
   font-size: var(--kai-font-size-h2);
   line-height: var(--kai-line-height-h2);
-  font-weight: var(--kai-font-weight-bold);
+  font-weight: var(--kai-font-weight-semi-bold);
   color: var(--kai-black);
   letter-spacing: 0.02rem;
 }
@@ -34,10 +34,9 @@ h3
 {
   font-size: var(--kai-font-size-h3);
   line-height: var(--kai-line-height-h3);
-  font-weight: var(--kai-font-weight-bold);
-  color: var(--kai-darkgrey);
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  font-weight: var(--kai-font-weight-semi-bold);
+  color: var(--kai-black);
+  letter-spacing: 0.02rem;
 }
 
 h4
@@ -45,6 +44,15 @@ h4
   font-size: var(--kai-font-size-h4);
   line-height: var(--kai-line-height-h4);
   font-weight: var(--kai-font-weight-semi-bold);
+  color: var(--kai-black);
+  letter-spacing: 0.02rem;
+}
+
+h5
+{
+  font-size: var(--kai-font-size-h5);
+  line-height: var(--kai-line-height-h5);
+  font-weight: var(--kai-font-weight-bold);
   color: var(--kai-darkgrey);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
