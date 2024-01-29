@@ -10,6 +10,7 @@ body
 {
   font-family: var(--kai-font-family);
   color: var(--kai-black);
+  background-color: var(--kai-lightgrey);
 }
 
 h1
@@ -65,6 +66,7 @@ p
   font-weight: var(--kai-font-weight-normal);
   color: var(--kai-black);
   letter-spacing: 0.02rem;
+  margin: 20px 0;
 }
 
 li
@@ -74,6 +76,7 @@ li
   font-weight: var(--kai-font-weight-normal);
   color: var(--kai-black);
   letter-spacing: 0.02rem;
+  margin: 20px 0;
 }
 
 a

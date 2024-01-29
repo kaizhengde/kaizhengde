@@ -26,8 +26,10 @@ const HomeContents = () => {
         <ListContent
           title="Projects & Teaching"
           listItems={[
-            <Item label="Linear Algebra (HS23)" onClick={() => navigate("/linear-algebra")} />,
-            <Item label="Bachelor Thesis" onClick={() => navigate("/thesis")} />,
+            <Item label="Bachelor Thesis, Website" onClick={() => navigate("/thesis")} />,
+            <Item label="Linear Algebra, Teaching" onClick={() => navigate("/linear-algebra")} />,
+            <Item label="1 Step, iOS App" onClick={() => navigate("/1-step")} />,
+            <Item label="Unsplash Map, iOS App" onClick={() => navigate("/unsplash-map")} />,
           ]}
         />
 
