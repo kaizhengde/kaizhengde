@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/linear-algebra" element={<LinearAlgebra />} />
-        <Route path="/post/:id" element={<PostRoute />} />
+        <Route path="/post/:slug" element={<PostRoute />} />
       </Routes>
     </BrowserRouter>
   );
@@ -22,12 +22,19 @@ const App = () => {
 export default App;
 
 const PostRoute = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [postData, setPostData] = useState<PostData | null>(null);
 
   useEffect(() => {
-    setPostData(postsData.find(postData => postData.id === id) || null);
-  }, [id]);
+    let foundPostData = null;
+    for (const key in postsData) {
+      if (postsData.hasOwnProperty(key)) {
+        foundPostData = postsData[key].find(post => post.slug === slug);
+        if (foundPostData) break;
+      }
+    }
+    setPostData(foundPostData || null);
+  }, [slug]);
 
   return (
     <>

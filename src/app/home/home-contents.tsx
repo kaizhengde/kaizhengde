@@ -2,6 +2,7 @@ import postsData from '@/cms/data/posts-data';
 import ListContent from '@/components/content/list-content';
 import TextContent from '@/components/content/text-content';
 import Item from '@/components/item/item';
+import Items from '@/components/item/items';
 import { useNavigate } from 'react-router-dom';
 
 const HomeContents = () => {
@@ -18,9 +19,18 @@ const HomeContents = () => {
 
         <ListContent
           title="Writings"
-          listItems={postsData.map(postData => (
-            <Item label={postData.title} onClick={() => navigate(`/post/${postData.id}`)} />
-          ))}
+          listItems={
+            Object.entries(postsData).map(([postId, postDataArray]) => {
+              if (postDataArray.length === 1) {
+                const postData = postDataArray[0];
+                return <Item label={postData.title} onClick={() => navigate(`/post/${postData.slug}`)} />;
+              }
+              else {
+                const itemsProps = postDataArray.map(postData => ({ label: postData.title, onClick: () => navigate(`/post/${postData.slug}`) }));
+                return <Items itemProps={itemsProps} />;
+              }
+            })
+          }
         />
 
         <ListContent
@@ -39,15 +49,14 @@ const HomeContents = () => {
             <Item label="Meditations, Marcus Aurelius" />,
             <Item label="赢家法则, 博多舍费尔" />,
             <Item label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
-            <Item label="Books 2024" href="#" />,
-            <Item label="Books 2023" href="#" />,
+            <Item label="More Books" onClick={() => navigate("/books")} />,
           ]}
         />
 
         <ListContent
           title="Current Fascinations"
           listItems={[
-            <Item label="Yoga & Calisthenics" />,
+            <Item label="Yoga" />,
             <Item label="Living with 100L space for all belongings" />,
             <Item label="Reading about and interacting with the world" />,
           ]}

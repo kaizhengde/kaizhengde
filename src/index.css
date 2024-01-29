@@ -10,7 +10,7 @@ body
 {
   font-family: var(--kai-font-family);
   color: var(--kai-black);
-  background-color: var(--kai-lightgrey);
+  /* background-color: var(--kai-lightgrey); */
 }
 
 h1
