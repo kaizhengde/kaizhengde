@@ -2,31 +2,35 @@ import ListContent from '@/components/content/list-content';
 import Item from '@/components/item/item';
 import Items from '@/components/item/items';
 import Content from '@/components/content/content';
+import TextSection from '@/components/section/text-section';
 
 const UnsplashMapContents = () => {
   return (
-    <section className="content">
-      <div className="layer-text">
-        <Content
-          title="Unsplash Map"
-        >
-          <p>{"UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map."}</p>
-          <p>{"I created the app in February 2021 to further consolidate my knowledge in UIKit. I was also looking forward to working with maps and making API calls. As always, it was an interesting and exciting journey."}</p>
-          <video width="100%" autoPlay loop muted playsInline poster="">
-            <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654688811/UnsplashMap_mb311o.mov" type="video/mp4" />
-          </video>
-        </Content>
+    <>
+      <section className="content">
+        <div className="layer-text">
+          <Content
+            title="Unsplash Map"
+          >
+            <p>{"UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map."}</p>
+            <p>{"I created the app in February 2021 to further consolidate my knowledge in UIKit. I was also looking forward to working with maps and making API calls. As always, it was an interesting and exciting journey."}</p>
+            <video width="100%" autoPlay loop muted playsInline poster="">
+              <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654688811/UnsplashMap_mb311o.mov" type="video/mp4" />
+            </video>
+          </Content>
 
-        <ListContent
-          title="Overview"
-          listItems={[
-            <img width="100%" src="/unsplash-map/um-thumbnail.jpeg" alt="Thumbnail" />,
-            <img width="100%" src="/unsplash-map/um-features.jpeg" alt="Features" />,
-          ]}
-        />
+          <ListContent
+            title="Overview"
+            listItems={[
+              <img width="100%" src="/unsplash-map/um-thumbnail.jpeg" alt="Thumbnail" />,
+              <img width="100%" src="/unsplash-map/um-features.jpeg" alt="Features" />,
+            ]}
+          />
+        </div>
+      </section>
 
+      <TextSection>
         <Content
-          style="text"
           title="Reflexion"
         >
           <h4>Challenges</h4>
@@ -64,27 +68,31 @@ const UnsplashMapContents = () => {
             <li>Adobe Photoshop</li>
           </ul>
         </Content>
+      </TextSection>
 
-        <Content
-          title="Design Prototypes"
-        >
-          <img width="100%" src="/unsplash-map/um-sketch.jpeg" alt="" />
-        </Content>
+      <section className="content">
+        <div className="layer-text">
+          <Content
+            title="Design Prototypes"
+          >
+            <img width="100%" src="/unsplash-map/um-sketch.jpeg" alt="" />
+          </Content>
 
-        <Content
-          title="Data Architecture Diagram"
-        >
-          <img width="100%" src="/unsplash-map/um-architecture-diagram.jpeg" alt="Architecture Diagram" />
-        </Content>
+          <Content
+            title="Data Architecture Diagram"
+          >
+            <img width="100%" src="/unsplash-map/um-architecture-diagram.jpeg" alt="Architecture Diagram" />
+          </Content>
 
-        <Content
-          title="Object Diagram"
-        >
-          <img width="100%" src="/unsplash-map/um-object-diagram.jpeg" alt="Object Diagram" />
-        </Content>
+          <Content
+            title="Object Diagram"
+          >
+            <img width="100%" src="/unsplash-map/um-object-diagram.jpeg" alt="Object Diagram" />
+          </Content>
 
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   )
 }
 

@@ -1,0 +1,25 @@
+.section,
+.div
+{
+  transition: background-color 0.5s ease;
+}
+
+.visibleSection
+{
+  background-color: var(--kai-grey);
+}
+
+.hiddenSection
+{
+  background-color: transparent;
+}
+
+.visibleDiv
+{
+  background-color: var(--kai-white);
+}
+
+.hiddenDiv
+{
+  background-color: transparent;
+}

@@ -1,14 +1,12 @@
 import styles from './content.module.css';
 
 interface ContentProps {
-  style?: "default" | "text";
   title: string | React.ReactNode;
   children: React.ReactNode;
   footnote?: string;
 }
 
 const Content: React.FC<ContentProps> = ({
-  style = "default",
   title,
   children,
   footnote,
