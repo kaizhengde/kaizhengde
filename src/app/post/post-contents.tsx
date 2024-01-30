@@ -5,7 +5,7 @@ import Items from '@/components/item/items';
 import postsData from '@/cms/data/posts-data';
 import { ItemProps } from '@/components/item/item';
 import Content from '@/components/content/content';
-import TextSection from '@/components/section/text-section';
+import ReadingSection from '@/components/section/reading-section';
 
 
 interface PostContentsProps {
@@ -24,14 +24,14 @@ const PostContents: React.FC<PostContentsProps> = ({ postData }) => {
   ]
 
   return (
-    <TextSection>
+    <ReadingSection>
       <Content
         title={<Items itemProps={informationHeaderItemProps} />}
       >
         <h2>{postData.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: postData.content }} />
       </Content>
-    </TextSection >
+    </ReadingSection >
   )
 }
 

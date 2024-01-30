@@ -2,7 +2,7 @@ import ListContent from '@/components/content/list-content';
 import Item from '@/components/item/item';
 import Items from '@/components/item/items';
 import Content from '@/components/content/content';
-import TextSection from '@/components/section/text-section';
+import ReadingSection from '@/components/section/reading-section';
 
 const UnsplashMapContents = () => {
   return (
@@ -29,7 +29,7 @@ const UnsplashMapContents = () => {
         </div>
       </section>
 
-      <TextSection>
+      <ReadingSection>
         <Content
           title="Reflexion"
         >
@@ -68,7 +68,7 @@ const UnsplashMapContents = () => {
             <li>Adobe Photoshop</li>
           </ul>
         </Content>
-      </TextSection>
+      </ReadingSection>
 
       <section className="content">
         <div className="layer-text">
