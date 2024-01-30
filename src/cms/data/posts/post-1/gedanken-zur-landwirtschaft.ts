@@ -11,12 +11,9 @@ export const gedankenZurLandwirtschaftPostData: PostData = {
   location: locationsData.zurich,
   language: languagesData.de,
   original: true,
-  equivalents: [],
 
   description: "Gedanken zur Landwirtschaft",
   content: `
-    <p><code>13.12.2022 - Zürich</code></p>
-
     <p>In den vergangenen Wochen habe ich mich aktiv mit der Landwirtschaft befasst, insbesondere mit der regenerativen Landwirtschaft. Dabei habe ich unter anderem das Buch &quot;Growing a Revolution: Bringing Our Soil Back to Life&quot; von David R. Montgomery gelesen. In diesem Post möchte ich eine kleine, reflektierte Zusammenfassung schreiben.</p>
 
     <p>Mein Ziel war es, einen möglichst objektiven sowie diversen ersten Einblick zu erhalten. Erfahrungen in der Landwirtschaft habe ich keine und mein Wissen ist ziemlich beschränkt. Es ist meine Neugierde und Begeisterung, die ich teilen möchte und ich freue mich über jeden Input. Lass uns gemeinsam lernen.</p>

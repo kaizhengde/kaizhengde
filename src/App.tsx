@@ -28,10 +28,8 @@ const PostRoute = () => {
   useEffect(() => {
     let foundPostData = null;
     for (const key in postsData) {
-      if (postsData.hasOwnProperty(key)) {
-        foundPostData = postsData[key].find(post => post.slug === slug);
-        if (foundPostData) break;
-      }
+      foundPostData = postsData[key].find(post => post.slug === slug);
+      if (foundPostData) break;
     }
     setPostData(foundPostData || null);
   }, [slug]);

@@ -84,3 +84,8 @@ a
   text-decoration: none;
   color: var(--kai-black);
 }
+
+a:hover
+{
+  cursor: pointer;
+}

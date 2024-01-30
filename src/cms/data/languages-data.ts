@@ -1,15 +1,15 @@
 import { LanguageData } from "@/cms/types/language-data";
 
 const languagesData: Record<string, LanguageData> = {
-  en: {
+  "en": {
     id: "en",
     label: "English"
   },
-  de: {
+  "de": {
     id: "de",
     label: "Deutsch"
   },
-  cn: {
+  "cn": {
     id: "中文",
     label: "中文"
   }

@@ -8,12 +8,15 @@ interface ItemsProps {
 const Items: React.FC<ItemsProps> = ({ itemProps }) => {
   return (
     <div className={styles.div}>
-      {itemProps.map((itemProp, index, array) => (
-        <div key={index}>
-          <Item {...itemProp} />
-          {index < array.length - 1 && <span className="separator">/</span>}
-        </div>
-      ))}
+      {itemProps.map((itemProp, index, array) => {
+        const separator = itemProp.type === "h5" ? "\u00B7" : "/";
+        return (
+          <div key={index} className={styles.div} >
+            <Item {...itemProp} />
+            {index < array.length - 1 && <span className="separator">{separator}</span>}
+          </div>
+        )
+      })}
     </div>
   );
 }

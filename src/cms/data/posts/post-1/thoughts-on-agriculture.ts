@@ -10,13 +10,10 @@ export const thoughtOnAgriculturePostData: PostData = {
   date: "13.12.2022",
   location: locationsData.zurich,
   language: languagesData.en,
-  original: true,
-  equivalents: [],
+  original: false,
 
   description: "Thoughts on Agriculture",
   content: `
-    <p><code>13.12.2022 - Zurich</code></p>
-
     <p>Over the past few weeks, I have been actively studying agriculture, especially regenerative agriculture. Among others, I read the book “Growing a Revolution: Bringing Our Soil Back to Life” by David R. Montgomery. In this post, I want to give a short, reflective summary.</p>
 
     <p>I aimed to gain an objective as well as diverse first insight. With no experience in agriculture and limited knowledge, it is my curiosity and enthusiasm that I want to share and I welcome any comments. Let&#39;s learn together.</p>

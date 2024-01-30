@@ -3,7 +3,7 @@ import { gedankenZurLandwirtschaftPostData } from "./posts/post-1/gedanken-zur-l
 import { thoughtOnAgriculturePostData } from "./posts/post-1/thoughts-on-agriculture.ts";
 
 const postsData: Record<string, PostData[]> = {
-  post1: [gedankenZurLandwirtschaftPostData, thoughtOnAgriculturePostData]
+  "post-1": [gedankenZurLandwirtschaftPostData, thoughtOnAgriculturePostData]
 }
 
 export default postsData;

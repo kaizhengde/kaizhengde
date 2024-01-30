@@ -10,7 +10,6 @@ export interface PostData {
   location: LocationData;
   language: LanguageData;
   original: boolean;
-  equivalents: PostData[];
 
   description: string;
   content: string;

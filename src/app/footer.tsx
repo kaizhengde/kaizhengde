@@ -1,8 +1,13 @@
+import Items from "@/components/item/items";
+
 const Footer = () => {
   return (
     <section className="content padding-y-0">
       <div className="layer-text background-none">
-        <h5>Last Update Jan 24 &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp; You Are Beautiful</h5>
+        <Items itemProps={[
+          { type: "h5", label: "Last Update Jan 24" },
+          { type: "h5", label: "You Are Beautiful" }
+        ]} />
       </div>
     </section>
   )

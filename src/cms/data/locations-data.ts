@@ -1,15 +1,15 @@
 import { LocationData } from "@/cms/types/location-data";
 
 const locationsData: Record<string, LocationData> = {
-  zurich: {
+  "zurich": {
     id: "zurich",
     label: "Zürich"
   },
-  konstanz: {
+  "konstanz": {
     id: "konstanz",
     label: "Konstanz"
   },
-  beijing: {
+  "beijing": {
     id: "beijing",
     label: "北京"
   }

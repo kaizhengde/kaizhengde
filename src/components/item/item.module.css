@@ -2,20 +2,27 @@
 {
   display: flex;
   flex-direction: row;
-  align-items: left;
+  align-items: center;
   justify-content: left;
+  column-gap: 10px;
 }
 
-.aItem:after
+.arrowItem
+{
+  margin: 0;
+  padding: 0;
+}
+
+.arrowItem:after
 {
   content: '→';
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
   display: inline-block;
   transition: transform 0.3s ease;
   transform-origin: left;
 }
 
-.aItem:hover:after
+.arrowItem:hover:after
 {
   transform: scaleX(1.3);
 }
