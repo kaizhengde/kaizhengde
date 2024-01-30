@@ -4,6 +4,7 @@ import style from './post.module.css';
 import Items from '@/components/item/items';
 import postsData from '@/cms/data/posts-data';
 import { ItemProps } from '@/components/item/item';
+import Content from '@/components/content/content';
 
 
 interface PostContentsProps {
@@ -24,9 +25,13 @@ const PostContents: React.FC<PostContentsProps> = ({ postData }) => {
   return (
     <section className="content">
       <div className="layer-text">
-        <Items itemProps={informationHeaderItemProps} />
-        <h2>{postData.title}</h2>
-        <div dangerouslySetInnerHTML={{ __html: postData.content }} />
+        <Content
+          style="text"
+          title={<Items itemProps={informationHeaderItemProps} />}
+        >
+          <h2>{postData.title}</h2>
+          <div dangerouslySetInnerHTML={{ __html: postData.content }} />
+        </Content>
       </div>
     </section>
   )

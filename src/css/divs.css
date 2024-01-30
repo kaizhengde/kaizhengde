@@ -9,7 +9,7 @@ div.layer-text
   width: 100%;
   max-width: 1200px;
   position: relative;
-  background-color: var(--kai-white);
+  background-color: var(--kai-lightgrey);
 }
 
 div.layer-text.background-none

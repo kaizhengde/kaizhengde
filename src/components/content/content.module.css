@@ -5,11 +5,9 @@
   margin-top: 20px;
   margin-bottom: 50px;
   position: relative;
-  background-color: var(--kai-white);
 }
 
 .ul
 {
   list-style-type: none;
-  padding-left: 0;
 }
