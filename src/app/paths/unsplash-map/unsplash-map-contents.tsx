@@ -14,6 +14,7 @@ const UnsplashMapContents = () => {
           >
             <p>{"UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map."}</p>
             <p>{"I created the app in February 2021 to further consolidate my knowledge in UIKit. I was also looking forward to working with maps and making API calls. As always, it was an interesting and exciting journey."}</p>
+            <img width="100%" src="/unsplash-map/um-thumbnail.jpeg" alt="Thumbnail" />
             <video width="100%" autoPlay loop muted playsInline poster="">
               <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654688811/UnsplashMap_mb311o.mov" type="video/mp4" />
             </video>
@@ -22,7 +23,6 @@ const UnsplashMapContents = () => {
           <ListContent
             title="Overview"
             listItems={[
-              <img width="100%" src="/unsplash-map/um-thumbnail.jpeg" alt="Thumbnail" />,
               <img width="100%" src="/unsplash-map/um-features.jpeg" alt="Features" />,
             ]}
           />
@@ -31,8 +31,13 @@ const UnsplashMapContents = () => {
 
       <ReadingSection>
         <Content
-          title="Reflexion"
+          title={<Items itemProps={[
+            { type: "h5", label: "21.02.2021" },
+            { type: "h5", label: "Konstanz" },
+          ]} />}
         >
+          <h3>Reflexion</h3>
+
           <h4>Challenges</h4>
 
           <ol>
@@ -90,6 +95,13 @@ const UnsplashMapContents = () => {
             <img width="100%" src="/unsplash-map/um-object-diagram.jpeg" alt="Object Diagram" />
           </Content>
 
+          <Content
+            title="Links"
+          >
+            <Item label="Unsplash API" href="https://unsplash.com/documentation#get-a-random-photo" />
+            <Item label="Unsplash API Terms" href="https://unsplash.com/api-terms" />
+            <Item label="GitHub" href="https://github.com/Mofawaw/UnsplashMap" />
+          </Content>
         </div>
       </section>
     </>

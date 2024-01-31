@@ -7,6 +7,7 @@ import postsData from './cms/data/posts-data.ts';
 import { PostData } from './cms/types/post-data.ts';
 import UnsplashMap from './app/paths/unsplash-map/unsplash-map.tsx';
 import OneStep from './app/paths/one-step/one-step.tsx';
+import Thesis from './app/paths/thesis/thesis.tsx';
 
 const App = () => {
   return (
@@ -15,9 +16,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/post/:slug" element={<PostRoute />} />
 
-        <Route path="/linear-algebra" element={<LinearAlgebra />} />
         <Route path="/unsplash-map" element={<UnsplashMap />} />
         <Route path="/1-step" element={<OneStep />} />
+        <Route path="/linear-algebra" element={<LinearAlgebra />} />
+        <Route path="/thesis" element={<Thesis />} />
       </Routes>
     </BrowserRouter>
   );

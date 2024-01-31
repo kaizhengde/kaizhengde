@@ -12,7 +12,7 @@ div.layer-text
   background-color: var(--kai-lightgrey);
 }
 
-div.layer-text.background-none
+div.layer-text.padding-y-0
 {
-  background-color: transparent;
+  padding: 0 200px;
 }
