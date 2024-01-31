@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: left;
   column-gap: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .a p,
@@ -13,14 +16,6 @@
 {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.overflow
-{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 250px;
 }
 
 .arrowItem
