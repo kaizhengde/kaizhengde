@@ -9,11 +9,18 @@ const Items: React.FC<ItemsProps> = ({ itemProps }) => {
   return (
     <div className={styles.div}>
       {itemProps.map((itemProp, index, array) => {
-        const separator = itemProp.type === "h5" ? "\u00B7" : "/";
+        const Separator = () => {
+          switch (itemProp.type) {
+            case 'h3': return <span className="separator h3">/</span>;
+            case 'h5': return <span className="separator h5">{"•"}</span>;
+            default: return <span className="separator">/</span>;
+          }
+        };
+
         return (
           <div key={index} className={styles.div} >
             <Item {...itemProp} />
-            {index < array.length - 1 && <span className="separator">{separator}</span>}
+            {index < array.length - 1 && <Separator />}
           </div>
         )
       })}

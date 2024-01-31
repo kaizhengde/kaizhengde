@@ -10,7 +10,7 @@ const LinearAlgebra = () => {
 
   return (
     <div>
-      <Header />
+      <Header title={"Linear Algebra"} />
       <LinearAlgebraContents />
       <Footer />
     </div>

@@ -7,10 +7,28 @@
   column-gap: 10px;
 }
 
+.a p
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.a h5
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.a h3
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .arrowItem
 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .arrowItem:after

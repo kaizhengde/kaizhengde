@@ -15,7 +15,7 @@ const Post: React.FC<PostProps> = ({ postData }) => {
 
   return (
     <div>
-      <Header />
+      <Header title={postData.title} />
       <PostContents postData={postData} />
       <Footer />
     </div>

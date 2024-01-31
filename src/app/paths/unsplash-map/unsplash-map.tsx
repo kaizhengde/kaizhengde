@@ -10,7 +10,7 @@ const UnsplashMap = () => {
 
   return (
     <div>
-      <Header />
+      <Header title={"Unsplash Map"} />
       <UnsplashMapContents />
       <Footer />
     </div>

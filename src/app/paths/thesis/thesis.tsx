@@ -1,20 +1,20 @@
-import OneStepContents from './one-step-contents';
+import ThesisContents from './thesis-contents.tsx';
 import Header from '../../header';
 import Footer from '../../footer';
 import { useEffect } from 'react';
 
-const OneStep = () => {
+const Thesis = () => {
   useEffect(() => {
-    document.title = '1 Step';
+    document.title = 'Thesis';
   }, []);
 
   return (
     <div>
-      <Header title={"1 Step"} />
-      <OneStepContents />
+      <Header title={"Thesis"} />
+      <ThesisContents />
       <Footer />
     </div>
   )
 }
 
-export default OneStep;
+export default Thesis;

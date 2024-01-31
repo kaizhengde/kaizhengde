@@ -6,3 +6,14 @@ span.separator
   font-weight: var(--kai-font-weight-extra-light);
   color: var(--kai-darkgrey);
 }
+
+span.separator.h3
+{
+  font-size: 1.75rem;
+  font-weight: var(--kai-font-weight-normal);
+}
+
+span.separator.h5
+{
+  font-size: 0.9rem;
+}

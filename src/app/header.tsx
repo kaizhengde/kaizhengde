@@ -1,14 +1,30 @@
-import { Link } from 'react-router-dom';
+import Items from '@/components/item/items';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-const Header = () => {
+interface HeaderProps {
+  title?: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ title = "" }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isHomeRoute = location.pathname === '/';
+
   return (
     <section className="content padding-y-0">
       <div className="layer-text background-none">
-        <h3>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            Kai Zheng
-          </Link>
-        </h3>
+        {isHomeRoute &&
+          <Items itemProps={[
+            { type: "h3", label: "Kai Zheng" },
+          ]} />
+        }
+        {!isHomeRoute &&
+          <Items itemProps={[
+            { type: "h3", label: "Kai Zheng", onClick: () => navigate("/") },
+            { type: "h3", label: `${title}`, grey: true }
+          ]} />
+        }
       </div>
     </section>
   )
