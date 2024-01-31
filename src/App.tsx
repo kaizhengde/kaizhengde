@@ -8,10 +8,12 @@ import { PostData } from './cms/types/post-data.ts';
 import UnsplashMap from './app/paths/unsplash-map/unsplash-map.tsx';
 import OneStep from './app/paths/one-step/one-step.tsx';
 import Thesis from './app/paths/thesis/thesis.tsx';
+import ScrollToTop from './components/helper/scroll-to-top.tsx';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post/:slug" element={<PostRoute />} />
