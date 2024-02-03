@@ -3,11 +3,8 @@ import ListContent from '@/components/content/list-content';
 import TextContent from '@/components/content/text-content';
 import Item from '@/components/item/item';
 import Items from '@/components/item/items';
-import { useNavigate } from 'react-router-dom';
 
 const HomeContents = () => {
-  const navigate = useNavigate();
-
   return (
     <section className="content">
       <div className="layer-text">
