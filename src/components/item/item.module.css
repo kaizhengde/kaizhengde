@@ -9,6 +9,11 @@
   text-overflow: ellipsis;
 }
 
+.div.overflow
+{
+  flex-direction: column;
+}
+
 .a p,
 .a h3,
 .a h5
