@@ -4,6 +4,7 @@ export interface ItemProps {
   type?: 'p' | 'h5' | 'h3';
   label: string;
   grey?: boolean;
+  back?: boolean;
   href?: string;
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
@@ -12,10 +13,11 @@ const Item: React.FC<ItemProps> = ({
   type = 'p',
   label,
   grey = false,
+  back = false,
   href,
   onClick,
 }) => {
-  const arrow = (href || onClick) ? styles.arrowItem : "";
+  const arrow = (href || onClick) ? (back ? styles.arrowBefore : styles.arrowAfter) : "";
   const labelColor = grey ? 'var(--kai-darkgrey)' : 'var(--kai-black)';
 
   const Label = ({ children }: { children: React.ReactNode }) => {
