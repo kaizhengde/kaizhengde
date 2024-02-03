@@ -12,7 +12,7 @@ export const thoughtOnAgriculturePostData: PostData = {
   language: languagesData.en,
   original: false,
 
-  description: "Thoughts on Agriculture",
+  description: "Over the past few weeks, I have been actively studying agriculture, especially regenerative agriculture. Among others, I read the book “Growing a Revolution: Bringing Our Soil Back to Life” by David R. Montgomery. In this post, I want to give a short, reflective summary.",
   content: `
     <p>Over the past few weeks, I have been actively studying agriculture, especially regenerative agriculture. Among others, I read the book “Growing a Revolution: Bringing Our Soil Back to Life” by David R. Montgomery. In this post, I want to give a short, reflective summary.</p>
 

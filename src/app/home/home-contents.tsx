@@ -23,10 +23,10 @@ const HomeContents = () => {
             Object.entries(postsData).map(([_, postDataArray]) => {
               if (postDataArray.length === 1) {
                 const postData = postDataArray[0];
-                return <Item label={postData.title} onClick={() => navigate(`/post/${postData.slug}`)} />;
+                return <Item label={postData.title} to={`/post/${postData.slug}`} />;
               }
               else {
-                const itemsProps = postDataArray.map(postData => ({ label: postData.title, onClick: () => navigate(`/post/${postData.slug}`) }));
+                const itemsProps = postDataArray.map(postData => ({ label: postData.title, to: `/post/${postData.slug}` }));
                 return <Items itemProps={itemsProps} />;
               }
             })
@@ -36,10 +36,10 @@ const HomeContents = () => {
         <ListContent
           title="Projects & Teaching"
           listItems={[
-            <Item label="Bachelor Thesis, Website" onClick={() => navigate("/thesis")} />,
-            <Item label="Linear Algebra, Teaching" onClick={() => navigate("/linear-algebra")} />,
-            <Item label="1 Step, iOS App" onClick={() => navigate("/1-step")} />,
-            <Item label="Unsplash Map, iOS App" onClick={() => navigate("/unsplash-map")} />,
+            <Item label="Bachelor Thesis, Website" to="/thesis" />,
+            <Item label="Linear Algebra, Teaching" to="/linear-algebra" />,
+            <Item label="1 Step, iOS App" to="/1-step" />,
+            <Item label="Unsplash Map, iOS App" to="/unsplash-map" />,
           ]}
         />
 
@@ -49,7 +49,7 @@ const HomeContents = () => {
             <Item label="Meditations, Marcus Aurelius" />,
             <Item label="赢家法则, 博多舍费尔" />,
             <Item label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
-            <Item label="More Books" onClick={() => navigate("/books")} />,
+            <Item label="More Books" to="/books" />,
           ]}
         />
 
@@ -87,7 +87,7 @@ const HomeContents = () => {
         <ListContent
           title="Contact"
           listItems={[
-            <Item label="kai@kaizheng.de" href="mailto:kai@kaizheng.de" />,
+            <Item label="kai@kaizheng.de" to="mailto:kai@kaizheng.de" external={true} />,
           ]}
         />
       </div>

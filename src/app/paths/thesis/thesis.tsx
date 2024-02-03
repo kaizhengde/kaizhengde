@@ -1,19 +1,22 @@
 import ThesisContents from './thesis-contents.tsx';
 import Header from '../../header';
 import Footer from '../../footer';
-import { useEffect } from 'react';
+import SEO from '@/components/helper/seo.tsx';
 
 const Thesis = () => {
-  useEffect(() => {
-    document.title = 'Thesis';
-  }, []);
-
   return (
-    <div>
-      <Header title={"Thesis"} />
-      <ThesisContents />
-      <Footer />
-    </div>
+    <>
+      <SEO
+        title={"Thesis"}
+        description={""}
+      />
+
+      <div>
+        <Header title={"Thesis"} />
+        <ThesisContents />
+        <Footer />
+      </div>
+    </>
   )
 }
 

@@ -1,14 +1,22 @@
 import HomeContents from './home-contents';
 import Header from '../header';
 import Footer from '../footer';
+import SEO from '@/components/helper/seo';
 
 const Home = () => {
   return (
-    <div>
-      <Header />
-      <HomeContents />
-      <Footer />
-    </div>
+    <>
+      <SEO
+        title={"Kai Zheng"}
+        description={"You have power over your mind — not outside events. Realize this, and you will find strength."}
+      />
+
+      <div>
+        <Header />
+        <HomeContents />
+        <Footer />
+      </div>
+    </>
   )
 }
 

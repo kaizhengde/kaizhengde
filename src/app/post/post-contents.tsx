@@ -1,5 +1,4 @@
 import { PostData } from '@/cms/types/post-data';
-import { useNavigate } from 'react-router-dom';
 import Items from '@/components/item/items';
 import postsData from '@/cms/data/posts-data';
 import { ItemProps } from '@/components/item/item';
@@ -12,8 +11,6 @@ interface PostContentsProps {
 }
 
 const PostContents: React.FC<PostContentsProps> = ({ postData }) => {
-  const navigate = useNavigate();
-
   const equivalentPosts = postsData[postData.id];
 
   const informationHeaderItemProps: ItemProps[] = [
@@ -22,7 +19,7 @@ const PostContents: React.FC<PostContentsProps> = ({ postData }) => {
     { type: "h5", label: postData.language.label },
     ...equivalentPosts
       .filter(p => p.language !== postData.language)
-      .map(p => ({ type: "h5" as "h5", label: p.language.label, onClick: () => navigate(`/post/${p.slug}`) })),
+      .map(p => ({ type: "h5" as "h5", label: p.language.label, to: `/post/${p.slug}` })),
   ]
 
   return (
