@@ -6,7 +6,6 @@
   justify-content: left;
   column-gap: 10px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -18,13 +17,28 @@
   margin-bottom: 0px;
 }
 
-.arrowItem
+.arrowBefore,
+.arrowAfter
 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.arrowItem:after
+.arrowBefore::before
+{
+  content: '←';
+  margin-right: 0.25rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.arrowBefore:hover:before
+{
+  transform: scaleX(1.3);
+}
+
+.arrowAfter:after
 {
   content: '→';
   margin-left: 0.25rem;
@@ -33,7 +47,7 @@
   transform-origin: left;
 }
 
-.arrowItem:hover:after
+.arrowAfter:hover:after
 {
   transform: scaleX(1.3);
 }
