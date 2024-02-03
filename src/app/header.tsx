@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ title = "" }) => {
         }
         {!isHomeRoute &&
           <Items itemProps={[
-            { type: "h3", label: "Kai Zheng", onClick: () => navigate("/") },
+            { type: "h3", label: "Kai Zheng", back: true, onClick: () => navigate("/") },
             { type: "h3", label: `${title}`, grey: true }
           ]} />
         }

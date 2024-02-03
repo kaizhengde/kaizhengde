@@ -18,9 +18,9 @@ const Footer = () => {
         }
         {!isHomeRoute &&
           <Items itemProps={[
+            { type: "h5", label: "Back", back: true, onClick: () => navigate("/") },
             { type: "h5", label: "Last Update Jan 24" },
             { type: "h5", label: "You Are Beautiful" },
-            { type: "h5", label: "Back", onClick: () => navigate("/") }
           ]} />
         }
       </div>

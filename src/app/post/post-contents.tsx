@@ -19,7 +19,10 @@ const PostContents: React.FC<PostContentsProps> = ({ postData }) => {
   const informationHeaderItemProps: ItemProps[] = [
     { type: "h5", label: postData.date },
     { type: "h5", label: postData.location.label },
-    ...equivalentPosts.map(p => ({ type: "h5" as "h5", label: p.language.label, onClick: () => navigate(`/post/${p.slug}`) })),
+    { type: "h5", label: postData.language.label },
+    ...equivalentPosts
+      .filter(p => p.language !== postData.language)
+      .map(p => ({ type: "h5" as "h5", label: p.language.label, onClick: () => navigate(`/post/${p.slug}`) })),
   ]
 
   return (
