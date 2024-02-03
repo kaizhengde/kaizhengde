@@ -12,7 +12,7 @@ export const gedankenZurLandwirtschaftPostData: PostData = {
   language: languagesData.de,
   original: true,
 
-  description: "Gedanken zur Landwirtschaft",
+  description: "In den vergangenen Wochen habe ich mich aktiv mit der Landwirtschaft befasst, insbesondere mit der regenerativen Landwirtschaft. Dabei habe ich unter anderem das Buch &quot;Growing a Revolution: Bringing Our Soil Back to Life&quot; von David R. Montgomery gelesen. In diesem Post möchte ich eine kleine, reflektierte Zusammenfassung schreiben.",
   content: `
     <p>In den vergangenen Wochen habe ich mich aktiv mit der Landwirtschaft befasst, insbesondere mit der regenerativen Landwirtschaft. Dabei habe ich unter anderem das Buch &quot;Growing a Revolution: Bringing Our Soil Back to Life&quot; von David R. Montgomery gelesen. In diesem Post möchte ich eine kleine, reflektierte Zusammenfassung schreiben.</p>
 
