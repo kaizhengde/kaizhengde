@@ -1,12 +1,11 @@
 import Items from '@/components/item/items';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 interface HeaderProps {
   title?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ title = "" }) => {
-  const navigate = useNavigate();
   const location = useLocation();
 
   const isHomeRoute = location.pathname === '/';
@@ -21,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ title = "" }) => {
         }
         {!isHomeRoute &&
           <Items itemProps={[
-            { type: "h3", label: "Kai Zheng", back: true, onClick: () => navigate("/") },
+            { type: "h3", label: "Kai Zheng", back: true, to: "/" },
             { type: "h3", label: `${title}`, grey: true }
           ]} />
         }

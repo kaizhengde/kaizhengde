@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import styles from './item.module.css';
 
 export interface ItemProps {
   type?: 'p' | 'h5' | 'h3';
   label: string;
   grey?: boolean;
+  to?: string;
+  external?: boolean;
   back?: boolean;
-  href?: string;
-  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 
 const Item: React.FC<ItemProps> = ({
@@ -14,10 +15,10 @@ const Item: React.FC<ItemProps> = ({
   label,
   grey = false,
   back = false,
-  href,
-  onClick,
+  to,
+  external = false,
 }) => {
-  const arrow = (href || onClick) ? (back ? styles.arrowBefore : styles.arrowAfter) : "";
+  const arrow = to ? (back ? styles.arrowBefore : styles.arrowAfter) : "";
   const labelColor = grey ? 'var(--kai-darkgrey)' : 'var(--kai-black)';
 
   const Label = ({ children }: { children: React.ReactNode }) => {
@@ -28,21 +29,28 @@ const Item: React.FC<ItemProps> = ({
     }
   };
 
-  if (href || onClick) {
+  if (to && !external) {
+    return (
+      <Link to={to} className={styles.a}>
+        <Label>{label}</Label>
+      </Link>
+    );
+  }
+
+  if (to && external) {
     return (
       <a
-        href={href}
-        onClick={onClick}
-        target={href ? "_blank" : undefined}
-        rel={href ? "noopener noreferrer" : undefined}
+        href={to}
+        target="_blank"
+        rel="noopener noreferrer"
         className={styles.a}
       >
         <Label>{label}</Label>
       </a>
     );
-  } else {
-    return <Label>{label}</Label>;
   }
+
+  return <Label>{label}</Label>;
 }
 
 export default Item;

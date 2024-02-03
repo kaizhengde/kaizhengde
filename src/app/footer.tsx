@@ -1,8 +1,7 @@
 import Items from "@/components/item/items";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const navigate = useNavigate();
   const location = useLocation();
 
   const isHomeRoute = location.pathname === '/';
@@ -18,7 +17,7 @@ const Footer = () => {
         }
         {!isHomeRoute &&
           <Items itemProps={[
-            { type: "h5", label: "Back", back: true, onClick: () => navigate("/") },
+            { type: "h5", label: "Back", back: true, to: "/" },
             { type: "h5", label: "Last Update Jan 24" },
             { type: "h5", label: "You Are Beautiful" },
           ]} />

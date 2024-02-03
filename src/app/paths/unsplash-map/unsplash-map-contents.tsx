@@ -98,9 +98,9 @@ const UnsplashMapContents = () => {
           <Content
             title="Links"
           >
-            <Item label="Unsplash API" href="https://unsplash.com/documentation#get-a-random-photo" />
-            <Item label="Unsplash API Terms" href="https://unsplash.com/api-terms" />
-            <Item label="GitHub" href="https://github.com/Mofawaw/UnsplashMap" />
+            <Item label="Unsplash API" to="https://unsplash.com/documentation#get-a-random-photo" external={true} />
+            <Item label="Unsplash API Terms" to="https://unsplash.com/api-terms" external={true} />
+            <Item label="GitHub" to="https://github.com/Mofawaw/UnsplashMap" external={true} />
           </Content>
         </div>
       </section>

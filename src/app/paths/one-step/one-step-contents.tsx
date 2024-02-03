@@ -105,7 +105,7 @@ const OneStepContents = () => {
           <Content
             title="Links"
           >
-            <Item label="GitHub" href="https://github.com/Mofawaw/1-StepPublic" />
+            <Item label="GitHub" to="https://github.com/Mofawaw/1-StepPublic" external={true} />
           </Content>
         </div>
       </section>
