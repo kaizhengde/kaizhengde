@@ -20,7 +20,7 @@ const HomeContents = () => {
         <ListContent
           title="Writings"
           listItems={
-            Object.entries(postsData).map(([postId, postDataArray]) => {
+            Object.entries(postsData).map(([_, postDataArray]) => {
               if (postDataArray.length === 1) {
                 const postData = postDataArray[0];
                 return <Item label={postData.title} onClick={() => navigate(`/post/${postData.slug}`)} />;

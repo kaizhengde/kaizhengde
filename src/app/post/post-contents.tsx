@@ -1,6 +1,5 @@
 import { PostData } from '@/cms/types/post-data';
 import { useNavigate } from 'react-router-dom';
-import style from './post.module.css';
 import Items from '@/components/item/items';
 import postsData from '@/cms/data/posts-data';
 import { ItemProps } from '@/components/item/item';
