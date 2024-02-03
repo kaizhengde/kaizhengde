@@ -2,23 +2,26 @@ import PostContents from './post-contents';
 import Header from '../header';
 import Footer from '../footer';
 import { PostData } from '@/cms/types/post-data';
-import { useEffect } from 'react';
+import SEO from '@/components/helper/seo';
 
 interface PostProps {
   postData: PostData;
 }
 
 const Post: React.FC<PostProps> = ({ postData }) => {
-  useEffect(() => {
-    document.title = postData.title;
-  }, []);
-
   return (
-    <div>
-      <Header title={postData.title} />
-      <PostContents postData={postData} />
-      <Footer />
-    </div>
+    <>
+      <SEO
+        title={postData.title}
+        description={postData.description}
+      />
+
+      <div>
+        <Header title={postData.title} />
+        <PostContents postData={postData} />
+        <Footer />
+      </div>
+    </>
   )
 }
 

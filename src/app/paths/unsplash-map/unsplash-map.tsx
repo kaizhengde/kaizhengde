@@ -1,19 +1,22 @@
 import UnsplashMapContents from './unsplash-map-contents';
 import Header from '../../header';
 import Footer from '../../footer';
-import { useEffect } from 'react';
+import SEO from '@/components/helper/seo';
 
 const UnsplashMap = () => {
-  useEffect(() => {
-    document.title = 'Unsplash Map';
-  }, []);
-
   return (
-    <div>
-      <Header title={"Unsplash Map"} />
-      <UnsplashMapContents />
-      <Footer />
-    </div>
+    <>
+      <SEO
+        title={"Unsplash Map"}
+        description={"UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map."}
+      />
+
+      <div>
+        <Header title={"Unsplash Map"} />
+        <UnsplashMapContents />
+        <Footer />
+      </div>
+    </>
   )
 }
 

@@ -1,19 +1,22 @@
 import OneStepContents from './one-step-contents';
 import Header from '../../header';
 import Footer from '../../footer';
-import { useEffect } from 'react';
+import SEO from '@/components/helper/seo';
 
 const OneStep = () => {
-  useEffect(() => {
-    document.title = '1 Step';
-  }, []);
-
   return (
-    <div>
-      <Header title={"1 Step"} />
-      <OneStepContents />
-      <Footer />
-    </div>
+    <>
+      <SEO
+        title={"1 Step"}
+        description={"1 Step is the app that genuinely got me into iOS engineering, which I built back in 2020."}
+      />
+
+      <div>
+        <Header title={"1 Step"} />
+        <OneStepContents />
+        <Footer />
+      </div>
+    </>
   )
 }
 
