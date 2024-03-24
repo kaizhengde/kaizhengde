@@ -33,7 +33,7 @@ const HomeContents = () => {
         <ListContent
           title="Projects & Teaching"
           listItems={[
-            <Item label="Bachelor Thesis, Website" to="/thesis" />,
+            <Item label="Bachelor Thesis, Website" to="/thesis/thesis-kai-zheng.pdf" external={true} />,
             <Item label="Linear Algebra, Teaching" to="/linear-algebra" />,
             <Item label="1 Step, iOS App" to="/1-step" />,
             <Item label="Unsplash Map, iOS App" to="/unsplash-map" />,
@@ -46,7 +46,7 @@ const HomeContents = () => {
             <Item label="Meditations, Marcus Aurelius" />,
             <Item label="赢家法则, 博多舍费尔" />,
             <Item label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
-            <Item label="More Books" to="/books" />,
+            // <Item label="More Books" to="/books" />,
           ]}
         />
 
@@ -64,6 +64,7 @@ const HomeContents = () => {
           listItems={[
             <Item label="Helmut Schmidt" />,
             <Item label="Marcus Aurelius" />,
+            <Item label="Roxie Nafousi" />,
             <Item label="Viktor E. Frankl" />,
             <Item label="Eliud Kipchoge" />,
           ]}
