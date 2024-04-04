@@ -7,7 +7,7 @@ interface ItemsProps {
 
 const Items: React.FC<ItemsProps> = ({ itemProps }) => {
   return (
-    <div className={styles.div}>
+    <div className={styles.itemsContainer}>
       {itemProps.map((itemProp, index, array) => {
         const Separator = () => {
           switch (itemProp.type) {
@@ -18,9 +18,9 @@ const Items: React.FC<ItemsProps> = ({ itemProps }) => {
         };
 
         return (
-          <div key={index} className={styles.div} >
+          <div key={index} className={styles.itemWithSeparator}>
+            {index > 0 && <Separator />}
             <Item {...itemProp} />
-            {index < array.length - 1 && <Separator />}
           </div>
         )
       })}
