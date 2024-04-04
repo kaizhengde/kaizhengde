@@ -24,8 +24,8 @@ const Item: React.FC<ItemProps> = ({
   const Label = ({ children }: { children: React.ReactNode }) => {
     switch (type) {
       case 'h3': return <h3 className={arrow} style={{ marginTop: '0px', marginBottom: '0px', color: labelColor }}>{children}</h3>;
-      case 'h5': return <h5 className={arrow}>{children}</h5>;
-      default: return <p className={arrow}>{children}</p>;
+      case 'h5': return <h5 className={arrow} style={{ marginTop: '0px', marginBottom: '0px' }}>{children}</h5>;
+      default: return <p className={arrow} style={{ marginTop: '0px', marginBottom: '0px' }}>{children}</p>;
     }
   };
 
