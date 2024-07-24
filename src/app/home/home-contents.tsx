@@ -44,27 +44,30 @@ const HomeContents = () => {
           title="Nice Books"
           listItems={[
             <Item label="Meditations, Marcus Aurelius" />,
-            <Item label="赢家法则, 博多舍费尔" />,
+            <Item label="What It Takes, Stephen A. Schwarzman" />,
             <Item label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
+            <Item label="Die Gesetze der Gewinner, Bodo Schäfer" />,
+            <Item label="The Power of Now, Eckhart Tolle" />,
             // <Item label="More Books" to="/books" />,
           ]}
         />
 
-        <ListContent
+        {/* <ListContent
           title="Current Fascinations"
           listItems={[
             <Item label="Yoga" />,
             <Item label="Living with 100L space for all belongings" />,
             <Item label="Reading about and interacting with the world" />,
           ]}
-        />
+        /> */}
 
         <ListContent
           title="I Look Up To"
           listItems={[
             <Item label="Helmut Schmidt" />,
+            <Item label="Stephen A. Schwarzman" />,
+            <Item label="Robert A. Iger" />,
             <Item label="Marcus Aurelius" />,
-            <Item label="Roxie Nafousi" />,
             <Item label="Viktor E. Frankl" />,
             <Item label="Eliud Kipchoge" />,
           ]}
