@@ -12,7 +12,7 @@ import ScrollToTop from './components/helper/scroll-to-top.tsx';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.VITE_PUBLIC_URL}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
