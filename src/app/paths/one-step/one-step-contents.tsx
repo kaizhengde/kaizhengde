@@ -12,7 +12,6 @@ const OneStepContents = () => {
           <Content
             title="1 Step"
           >
-            <p>{"1 Step is the app that genuinely got me into iOS engineering, which I built back in 2020. It was during the designing and development process that I started getting myself deep into the material and discovered my passion for coding and designing."}</p>
             <img width="100%" src="/one-step/os-thumbnail.jpg" alt="Thumbnail" />
             <video width="100%" autoPlay loop muted playsInline poster="">
               <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654801869/1_Step_bxgi6a.mov" type="video/mp4" />

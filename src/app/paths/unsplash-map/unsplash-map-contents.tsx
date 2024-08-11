@@ -12,8 +12,6 @@ const UnsplashMapContents = () => {
           <Content
             title="Unsplash Map"
           >
-            <p>{"UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map."}</p>
-            <p>{"I created the app in February 2021 to further consolidate my knowledge in UIKit. I was also looking forward to working with maps and making API calls. As always, it was an interesting and exciting journey."}</p>
             <img width="100%" src="/unsplash-map/um-thumbnail.jpeg" alt="Thumbnail" />
             <video width="100%" autoPlay loop muted playsInline poster="">
               <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654688811/UnsplashMap_mb311o.mov" type="video/mp4" />

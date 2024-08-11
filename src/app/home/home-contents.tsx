@@ -48,18 +48,8 @@ const HomeContents = () => {
             <Item label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
             <Item label="Die Gesetze der Gewinner, Bodo Schäfer" />,
             <Item label="The Power of Now, Eckhart Tolle" />,
-            // <Item label="More Books" to="/books" />,
           ]}
         />
-
-        {/* <ListContent
-          title="Current Fascinations"
-          listItems={[
-            <Item label="Yoga" />,
-            <Item label="Living with 100L space for all belongings" />,
-            <Item label="Reading about and interacting with the world" />,
-          ]}
-        /> */}
 
         <ListContent
           title="I Look Up To"
@@ -79,7 +69,7 @@ const HomeContents = () => {
             <Item label="Trees: 153" />,
             <Item label="Education: €25" />,
             <Item label="Ärzte ohne Grenzen, since 2022, €15/month" />,
-            <Item label="Rewind University, since 2019, €5/month" />,
+            <Item label="Rewild University, since 2019, €5/month" />,
             <Item label="WWF Deutschland, since 2018, €5/month" />,
             <Item label="PETA Deutschland, 2017-2019, €5/month" />,
           ]}
@@ -88,6 +78,7 @@ const HomeContents = () => {
         <ListContent
           title="Contact"
           listItems={[
+            <Item label="LinkedIn" to="https://www.linkedin.com/in/kai-zheng-8342371b3" external={true} />,
             <Item label="kai@kaizheng.de" to="mailto:kai@kaizheng.de" external={true} />,
           ]}
         />
