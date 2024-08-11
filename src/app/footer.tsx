@@ -11,15 +11,13 @@ const Footer = () => {
       <div className="layer-text background-none">
         {isHomeRoute &&
           <Items itemProps={[
-            { type: "h5", label: "Last Update Mar 24" },
-            { type: "h5", label: "You Are Beautiful" }
+            { type: "h5", label: "Last Update Aug 24" },
           ]} />
         }
         {!isHomeRoute &&
           <Items itemProps={[
             { type: "h5", label: "Back", back: true, to: "/" },
-            { type: "h5", label: "Last Update Jan 24" },
-            { type: "h5", label: "You Are Beautiful" },
+            { type: "h5", label: "Last Update Aug 24" },
           ]} />
         }
       </div>
