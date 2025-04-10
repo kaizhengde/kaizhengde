@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import styles from './item.module.css';
 
-export interface ItemProps {
+export type ItemProps = {
   type?: 'p' | 'h5' | 'h3';
   label: string;
   grey?: boolean;

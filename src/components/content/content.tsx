@@ -1,6 +1,6 @@
 import styles from './content.module.css';
 
-interface ContentProps {
+type ContentProps = {
   title: string | React.ReactNode;
   children: React.ReactNode;
   footnote?: string;

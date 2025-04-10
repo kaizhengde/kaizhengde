@@ -1,6 +1,6 @@
 import Content from './content';
 
-interface TextContentProps {
+type TextContentProps = {
   title: string;
   text: string;
   footnote?: string;

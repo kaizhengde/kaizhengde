@@ -4,7 +4,7 @@ import TextContent from '@/components/content/text-content';
 import Item from '@/components/item/item';
 import Items from '@/components/item/items';
 
-const Home = () => {
+export default function Home() {
   return (
     <section className="content">
       <div className="layer-text">
@@ -88,5 +88,3 @@ const Home = () => {
     </section>
   )
 }
-
-export default Home;

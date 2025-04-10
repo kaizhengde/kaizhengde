@@ -10,7 +10,7 @@ export const metadata = {
   description: "This page contains all the notes and materials used in the exercise sessions G-08.",
 }
 
-const LinearAlgebra = () => {
+export default function LinearAlgebra() {
   return (
     <section className="content">
       <div className="layer-text">
@@ -87,5 +87,3 @@ const LinearAlgebra = () => {
     </section>
   )
 }
-
-export default LinearAlgebra;

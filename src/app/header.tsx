@@ -11,7 +11,7 @@ const routeTitleMapping: Record<string, string> = {
   '/unsplash-map': 'Unsplash Map',
 };
 
-const Header = () => {
+export default function Header() {
   const pathname = usePathname()
   const isHomeRoute = pathname === '/'
   const title = pathname.startsWith('/post') 
@@ -35,5 +35,3 @@ const Header = () => {
     </section>
   )
 }
-
-export default Header

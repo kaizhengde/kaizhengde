@@ -1,7 +1,7 @@
 import Item, { ItemProps } from "./item";
 import styles from './item.module.css';
 
-interface ItemsProps {
+type ItemsProps = {
   itemProps: ItemProps[]
 }
 

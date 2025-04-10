@@ -3,7 +3,7 @@
 import Items from "@/components/item/items";
 import { usePathname } from "next/navigation";
 
-const Footer = () => {
+export default function Footer() {
   const pathname = usePathname();
   const isHomeRoute = pathname === "/";
 
@@ -28,5 +28,3 @@ const Footer = () => {
     </section>
   );
 };
-
-export default Footer;

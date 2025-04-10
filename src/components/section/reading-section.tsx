@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 
-interface ReadingSectionProps {
+type ReadingSectionProps = {
   children: React.ReactNode;
 }
 

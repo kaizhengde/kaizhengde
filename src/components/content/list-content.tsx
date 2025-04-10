@@ -1,7 +1,7 @@
 import Content from './content';
 import styles from './content.module.css';
 
-interface ListContentProps {
+type ListContentProps = {
   title: string;
   listItems: React.ReactNode[];
   footnote?: string;

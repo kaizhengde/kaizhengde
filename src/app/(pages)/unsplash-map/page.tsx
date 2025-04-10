@@ -9,7 +9,7 @@ export const metadata = {
   description: "UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map.",
 }
 
-const UnsplashMap = () => {
+export default function UnsplashMap() {
   return (
     <>
       <section className="content">
@@ -110,5 +110,3 @@ const UnsplashMap = () => {
     </>
   )
 }
-
-export default UnsplashMap;

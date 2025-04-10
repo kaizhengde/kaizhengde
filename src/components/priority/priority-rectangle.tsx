@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './priority-rectangle.module.css';
 
-export interface PriorityRectangleProps {
+export type PriorityRectangleProps = {
   color: 'green' | 'black' | 'red';
 }
 
