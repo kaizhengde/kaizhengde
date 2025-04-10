@@ -4,12 +4,6 @@ import TextContent from '@/components/content/text-content';
 import Item from '@/components/item/item';
 import Items from '@/components/item/items';
 
-export const metadata = {
-  title: 'Kai Zheng',
-  description:
-    'You have power over your mind — not outside events. Realize this, and you will find strength.',
-}
-
 const Home = () => {
   return (
     <section className="content">
