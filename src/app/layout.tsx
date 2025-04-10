@@ -1,4 +1,3 @@
-import './index.css'
 import './global.css'
 import Header from './header'
 import Footer from './footer'
