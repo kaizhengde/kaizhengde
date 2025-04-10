@@ -33,7 +33,10 @@ const HomeContents = () => {
         <ListContent
           title="Projects & Teaching"
           listItems={[
-            <Item label="Bachelor Thesis, Website" to="/thesis/thesis-kai-zheng.pdf" external={true} />,
+            <Items itemProps={[
+              { label: "Bachelor Thesis, Website", to: "https://thesis.kaizheng.de", external: true },
+              { label: "PDF", to: "/thesis/thesis-kai-zheng.pdf", external: true }
+             ]} />,
             <Item label="Linear Algebra, Teaching" to="/linear-algebra" />,
             <Item label="1 Step, iOS App" to="/1-step" />,
             <Item label="Unsplash Map, iOS App" to="/unsplash-map" />,
@@ -55,6 +58,7 @@ const HomeContents = () => {
           title="I Look Up To"
           listItems={[
             <Item label="Helmut Schmidt" />,
+            <Item label="Robert Habeck" />,
             <Item label="Stephen A. Schwarzman" />,
             <Item label="Robert A. Iger" />,
             <Item label="Marcus Aurelius" />,
@@ -69,7 +73,7 @@ const HomeContents = () => {
             <Item label="Trees: 153" />,
             <Item label="Education: €25" />,
             <Item label="Ärzte ohne Grenzen, since 2022, €15/month" />,
-            <Item label="Rewild University, since 2019, €5/month" />,
+            <Item label="Rewild University, since 2019, €10/month" />,
             <Item label="WWF Deutschland, since 2018, €5/month" />,
             <Item label="PETA Deutschland, 2017-2019, €5/month" />,
           ]}

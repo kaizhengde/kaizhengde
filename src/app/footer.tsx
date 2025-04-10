@@ -13,14 +13,14 @@ const Footer = () => {
         {isHomeRoute ? (
           <Items 
             itemProps={[
-              { type: "h5", label: "Last Update Aug 24" },
+              { type: "h5", label: "Last Update Apr 25" },
             ]}
           />
         ) : (
           <Items 
             itemProps={[
               { type: "h5", label: "Back", back: true, to: "/" },
-              { type: "h5", label: "Last Update Aug 24" },
+              { type: "h5", label: "Last Update Apr 25" },
             ]}
           />
         )}
