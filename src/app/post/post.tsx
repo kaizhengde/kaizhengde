@@ -1,4 +1,4 @@
-import PostContents from './post-contents';
+import PostContents from './content';
 import Header from '../header';
 import Footer from '../footer';
 import { PostData } from '@/cms/types/post-data';

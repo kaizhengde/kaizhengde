@@ -1,6 +1,6 @@
-import HomeContents from './home-contents';
-import Header from '../header';
-import Footer from '../footer';
+import HomeContents from './content';
+import Header from './header';
+import Footer from './footer';
 import SEO from '@/components/helper/seo';
 
 const Home = () => {

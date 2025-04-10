@@ -1,4 +1,4 @@
-import Content from './content.tsx';
+import Content from './content';
 
 interface TextContentProps {
   title: string;

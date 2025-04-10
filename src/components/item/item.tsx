@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom';
+"use client";
+
+import Link from 'next/link';
 import styles from './item.module.css';
 
 export interface ItemProps {
@@ -23,15 +25,30 @@ const Item: React.FC<ItemProps> = ({
 
   const Label = ({ children }: { children: React.ReactNode }) => {
     switch (type) {
-      case 'h3': return <h3 className={arrow} style={{ marginTop: '0px', marginBottom: '0px', color: labelColor }}>{children}</h3>;
-      case 'h5': return <h5 className={arrow} style={{ marginTop: '0px', marginBottom: '0px' }}>{children}</h5>;
-      default: return <p className={arrow} style={{ marginTop: '0px', marginBottom: '0px' }}>{children}</p>;
+      case 'h3':
+        return (
+          <h3 className={arrow} style={{ marginTop: '0px', marginBottom: '0px', color: labelColor }}>
+            {children}
+          </h3>
+        );
+      case 'h5':
+        return (
+          <h5 className={arrow} style={{ marginTop: '0px', marginBottom: '0px' }}>
+            {children}
+          </h5>
+        );
+      default:
+        return (
+          <p className={arrow} style={{ marginTop: '0px', marginBottom: '0px' }}>
+            {children}
+          </p>
+        );
     }
   };
 
   if (to && !external) {
     return (
-      <Link to={to} className={styles.a}>
+      <Link href={to} className={styles.a}>
         <Label>{label}</Label>
       </Link>
     );
@@ -51,6 +68,6 @@ const Item: React.FC<ItemProps> = ({
   }
 
   return <Label>{label}</Label>;
-}
+};
 
 export default Item;

@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
 interface SEOProps {
   title: string;
@@ -7,16 +7,13 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({ title, description, meta = [] }) => (
-  <Helmet
-    title={title}
-    meta={[
-      {
-        name: `description`,
-        content: description,
-      },
-      ...meta,
-    ]}
-  />
+  <Head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {meta.map((entry, index) => (
+      <meta key={index} name={entry.name} content={entry.content} />
+    ))}
+  </Head>
 );
 
 export default SEO;

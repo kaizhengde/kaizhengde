@@ -3,7 +3,7 @@ import Item from '@/components/item/item';
 import Items from '@/components/item/items';
 import Content from '@/components/content/content';
 import PriorityRectangle from '@/components/priority/priority-rectangle';
-import styles from './linear-algebra.module.css';
+import styles from './styles.module.css';
 
 const LinearAlgebraContents = () => {
   return (

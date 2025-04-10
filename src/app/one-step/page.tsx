@@ -1,6 +1,6 @@
-import OneStepContents from './one-step-contents';
-import Header from '../../header';
-import Footer from '../../footer';
+import OneStepContents from './content';
+import Header from '../header';
+import Footer from '../footer';
 import SEO from '@/components/helper/seo';
 
 const OneStep = () => {

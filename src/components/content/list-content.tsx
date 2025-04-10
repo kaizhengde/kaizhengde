@@ -1,4 +1,4 @@
-import Content from './content.tsx';
+import Content from './content';
 import styles from './content.module.css';
 
 interface ListContentProps {
