@@ -1,5 +1,7 @@
 import './index.css'
 import './global.css'
+import Header from './header'
+import Footer from './footer'
 
 export const metadata = {
   title: 'Kai Zheng',
@@ -13,7 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+          <main>
+            {children}
+          </main>
+        <Footer />
+      </body>
     </html>
   )
 }

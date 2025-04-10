@@ -11,11 +11,7 @@ const UnsplashMap = () => {
         description={"UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map."}
       />
 
-      <div>
-        <Header title={"Unsplash Map"} />
-        <UnsplashMapContents />
-        <Footer />
-      </div>
+      <UnsplashMapContents />
     </>
   )
 }

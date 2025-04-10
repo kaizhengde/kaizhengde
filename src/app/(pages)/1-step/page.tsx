@@ -1,6 +1,4 @@
 import OneStepContents from './content';
-import Header from '../../header';
-import Footer from '../../footer';
 import SEO from '@/components/helper/seo';
 
 const OneStep = () => {
@@ -11,11 +9,7 @@ const OneStep = () => {
         description={"1 Step is the app that genuinely got me into iOS engineering, which I built back in 2020."}
       />
 
-      <div>
-        <Header title={"1 Step"} />
-        <OneStepContents />
-        <Footer />
-      </div>
+      <OneStepContents />
     </>
   )
 }
