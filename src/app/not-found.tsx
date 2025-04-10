@@ -3,9 +3,9 @@ import Header from "./header";
 
 export default function NotFound() {
     return (
-        <section>
+        <div>
             <Header title={"404"} />
             <Footer />
-        </section>
+        </div>
     )
 }

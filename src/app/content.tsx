@@ -59,8 +59,6 @@ const HomeContents = () => {
           listItems={[
             <Item label="Helmut Schmidt" />,
             <Item label="Robert Habeck" />,
-            <Item label="Stephen A. Schwarzman" />,
-            <Item label="Robert A. Iger" />,
             <Item label="Marcus Aurelius" />,
             <Item label="Viktor E. Frankl" />,
             <Item label="Eliud Kipchoge" />,
