@@ -3,15 +3,13 @@ import Post from '../post';
 import postsData from '@/cms/data/posts-data';
 import type { PostData } from '@/cms/types/post-data';
 
-interface Params {
-  slug: string;
-}
+interface PostPageProps {
+  params: {
+    slug: string;
+  };
+};
 
-interface Props {
-  params: Params;
-}
-
-export default function PostPage({ params }: Props) {
+export default function PostPage({ params }: PostPageProps) {
   const { slug } = params;
   let foundPostData: PostData | null = null;
 
@@ -24,5 +22,7 @@ export default function PostPage({ params }: Props) {
     notFound();
   }
 
-  return <Post postData={foundPostData} />;
+  return (
+    <Post postData={foundPostData} />
+  )
 }
