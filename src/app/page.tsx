@@ -81,8 +81,9 @@ export default function Home() {
         <ListContent
           title="Contact"
           listItems={[
-            <Item label="LinkedIn" to="https://www.linkedin.com/in/kai-zheng-8342371b3" external={true} />,
+            <Item label="Let's talk!" to="https://cal.com/kaizheng" external={true} />,
             <Item label="kai@kaizheng.de" to="mailto:kai@kaizheng.de" external={true} />,
+            <Item label="LinkedIn" to="https://www.linkedin.com/in/kai-zheng-8342371b3" external={true} />,
           ]}
         />
       </div>
