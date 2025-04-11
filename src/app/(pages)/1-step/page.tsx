@@ -17,7 +17,7 @@ export default function OneStep() {
           <Content
             title="1 Step"
           >
-            <img width="100%" src="/one-step/os-thumbnail.jpg" alt="Thumbnail" />
+            <img width="100%" src="/app/one-step/os-thumbnail.jpg" alt="Thumbnail" />
             <video width="100%" autoPlay loop muted playsInline poster="">
               <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654801869/1_Step_bxgi6a.mov" type="video/mp4" />
             </video>
@@ -101,7 +101,7 @@ export default function OneStep() {
           <Content
             title="Object diagram of CoreData entities"
           >
-            <img width="100%" src="/one-step/os-object-diagram.png" alt="Object Diagram" />
+            <img width="100%" src="/app/one-step/os-object-diagram.png" alt="Object Diagram" />
           </Content>
 
           <Content

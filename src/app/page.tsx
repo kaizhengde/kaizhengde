@@ -33,11 +33,12 @@ export default function Home() {
         <ListContent
           title="Projects & Teaching"
           listItems={[
+            <Item label="Gencast, iOS App" to="https://minuteforai.com/gencast" external={true} />,
             <Items itemProps={[
-              { label: "Bachelor Thesis, Website", to: "https://thesis.kaizheng.de", external: true },
-              { label: "PDF", to: "/thesis/thesis-kai-zheng.pdf", external: true }
+              { label: "Bachelor Thesis, Web App", to: "https://thesis.kaizheng.de", external: true },
+              { label: "PDF", to: "/app/thesis/thesis-kai-zheng.pdf", external: true }
              ]} />,
-            <Item label="Linear Algebra, Teaching" to="/linear-algebra" />,
+            <Item label="Linear Algebra, Teaching Materials" to="/linear-algebra" />,
             <Item label="1 Step, iOS App" to="/1-step" />,
             <Item label="Unsplash Map, iOS App" to="/unsplash-map" />,
           ]}

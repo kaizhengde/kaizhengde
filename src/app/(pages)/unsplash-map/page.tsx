@@ -17,7 +17,7 @@ export default function UnsplashMap() {
           <Content
             title="Unsplash Map"
           >
-            <img width="100%" src="/unsplash-map/um-thumbnail.jpeg" alt="Thumbnail" />
+            <img width="100%" src="/app/unsplash-map/um-thumbnail.jpeg" alt="Thumbnail" />
             <video width="100%" autoPlay loop muted playsInline poster="">
               <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654688811/UnsplashMap_mb311o.mov" type="video/mp4" />
             </video>
@@ -26,7 +26,7 @@ export default function UnsplashMap() {
           <ListContent
             title="Overview"
             listItems={[
-              <img width="100%" src="/unsplash-map/um-features.jpeg" alt="Features" />,
+              <img width="100%" src="/app/unsplash-map/um-features.jpeg" alt="Features" />,
             ]}
           />
         </div>
@@ -83,19 +83,19 @@ export default function UnsplashMap() {
           <Content
             title="Design Prototypes"
           >
-            <img width="100%" src="/unsplash-map/um-sketch.jpeg" alt="" />
+            <img width="100%" src="/app/unsplash-map/um-sketch.jpeg" alt="" />
           </Content>
 
           <Content
             title="Data Architecture Diagram"
           >
-            <img width="100%" src="/unsplash-map/um-architecture-diagram.jpeg" alt="Architecture Diagram" />
+            <img width="100%" src="/app/unsplash-map/um-architecture-diagram.jpeg" alt="Architecture Diagram" />
           </Content>
 
           <Content
             title="Object Diagram"
           >
-            <img width="100%" src="/unsplash-map/um-object-diagram.jpeg" alt="Object Diagram" />
+            <img width="100%" src="/app/unsplash-map/um-object-diagram.jpeg" alt="Object Diagram" />
           </Content>
 
           <Content
