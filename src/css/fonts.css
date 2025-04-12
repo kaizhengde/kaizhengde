@@ -65,21 +65,21 @@
 {
   --kai-font-family: 'Manrope', sans-serif;
 
-  --kai-font-size-h1: clamp(3rem, 6vw, 5rem);        
-  --kai-font-size-h2: clamp(2em, 5vw, 3rem);       
-  --kai-font-size-h3: clamp(1.4rem, 4vw, 1.7rem);     
-  --kai-font-size-h4: clamp(1.1rem, 3.5vw, 1.4rem);    
+  --kai-font-size-h1: clamp(3.6rem, 6vw, 5rem);        
+  --kai-font-size-h2: clamp(2.4em, 5vw, 3rem);       
+  --kai-font-size-h3: clamp(1.7rem, 4vw, 1.7rem);     
+  --kai-font-size-h4: clamp(1.4rem, 3.5vw, 1.4rem);    
   --kai-font-size-h5: clamp(0.9rem, 2.5vw, 0.9rem);   
   --kai-font-size-paragraph: clamp(1.15rem, 3vw, 1.25rem);
   --kai-font-size-footnote: clamp(0.8rem, 2vw, 0.9rem);
 
-  --kai-line-height-h1: 6.5rem;    
-  --kai-line-height-h2: 3.75rem;   
-  --kai-line-height-h3: 2.5rem;   
-  --kai-line-height-h4: 2rem;      
-  --kai-line-height-h5: 1.5rem;    
-  --kai-line-height-paragraph: 2.25rem;
-  --kai-line-height-footnote: 1.5rem;   
+  --kai-line-height-h1: clamp(5.5rem, 4vw, 6.5rem);
+  --kai-line-height-h2: clamp(3.2rem, 3.5vw, 3.75rem);
+  --kai-line-height-h3: clamp(2.5rem, 2.5vw, 2.5rem);
+  --kai-line-height-h4: clamp(2rem, 2vw, 2rem);
+  --kai-line-height-h5: clamp(1.5rem, 1.5vw, 1.5rem);
+  --kai-line-height-paragraph: clamp(1.9rem, 2vw, 2.25rem);
+  --kai-line-height-footnote: clamp(1.2rem, 1vw, 1.5rem);
 
   --kai-font-weight-extra-light: 200;
   --kai-font-weight-light: 300;
