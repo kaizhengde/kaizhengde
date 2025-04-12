@@ -4,6 +4,7 @@ import Items from '@/components/item/items';
 import Content from '@/components/content/content';
 import ReadingSection from '@/components/section/reading-section';
 
+
 export const metadata = {
   title: "Unsplash Map",
   description: "UnsplashMap allows you to load random photos from Unsplash and explore their locations on a map.",
@@ -26,7 +27,7 @@ export default function UnsplashMap() {
           <ListContent
             title="Overview"
             listItems={[
-              <img width="100%" src="/app/unsplash-map/um-features.jpeg" alt="Features" />,
+              <img key="um-features" width="100%" src="/app/unsplash-map/um-features.jpeg" alt="Features" />,
             ]}
           />
         </div>

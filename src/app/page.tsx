@@ -17,14 +17,14 @@ export default function Home() {
         <ListContent
           title="Writings"
           listItems={
-            Object.entries(postsData).map(([_, postDataArray]) => {
+            Object.entries(postsData).map(([, postDataArray]) => {
               if (postDataArray.length === 1) {
                 const postData = postDataArray[0];
-                return <Item label={postData.title} to={`/post/${postData.slug}`} />;
+                return <Item key="post" label={postData.title} to={`/post/${postData.slug}`} />;
               }
               else {
                 const itemsProps = postDataArray.map(postData => ({ label: postData.title, to: `/post/${postData.slug}` }));
-                return <Items itemProps={itemsProps} />;
+                return <Items key="posts" itemProps={itemsProps} />;
               }
             })
           }
@@ -33,57 +33,57 @@ export default function Home() {
         <ListContent
           title="Projects & Teaching"
           listItems={[
-            <Item label="Gencast, iOS App" to="https://minuteforai.com/gencast" external={true} />,
-            <Items itemProps={[
+            <Item key="gencast" label="Gencast, iOS App" to="https://minuteforai.com/gencast" external={true} />,
+            <Items key="thesis" itemProps={[
               { label: "Bachelor Thesis, Web App", to: "https://thesis.kaizheng.de", external: true },
               { label: "PDF", to: "/app/thesis/thesis-kai-zheng.pdf", external: true }
              ]} />,
-            <Item label="Linear Algebra, Teaching Materials" to="/linear-algebra" />,
-            <Item label="1 Step, iOS App" to="/1-step" />,
-            <Item label="Unsplash Map, iOS App" to="/unsplash-map" />,
+            <Item key="linear-algebra" label="Linear Algebra, Teaching Materials" to="/linear-algebra" />,
+            <Item key="1-step" label="1 Step, iOS App" to="/1-step" />,
+            <Item key="unsplash-map" label="Unsplash Map, iOS App" to="/unsplash-map" />,
           ]}
         />
 
         <ListContent
           title="Nice Books"
           listItems={[
-            <Item label="Meditations, Marcus Aurelius" />,
-            <Item label="What It Takes, Stephen A. Schwarzman" />,
-            <Item label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
-            <Item label="Die Gesetze der Gewinner, Bodo Schäfer" />,
-            <Item label="The Power of Now, Eckhart Tolle" />,
+            <Item key="meditations" label="Meditations, Marcus Aurelius" />,
+            <Item key="what-it-takes" label="What It Takes, Stephen A. Schwarzman" />,
+            <Item key="trotzdem-ja-zum-leben-sagen" label="Trotzdem Ja zum Leben sagen, Viktor E. Frankl" />,
+            <Item key="die-gesetze-der-gewinner" label="Die Gesetze der Gewinner, Bodo Schäfer" />,
+            <Item key="the-power-of-now" label="The Power of Now, Eckhart Tolle" />,
           ]}
         />
 
         <ListContent
           title="I Look Up To"
           listItems={[
-            <Item label="Helmut Schmidt" />,
-            <Item label="Robert Habeck" />,
-            <Item label="Marcus Aurelius" />,
-            <Item label="Viktor E. Frankl" />,
-            <Item label="Eliud Kipchoge" />,
+            <Item key="helmut-schmidt" label="Helmut Schmidt" />,
+            <Item key="robert-habeck" label="Robert Habeck" />,
+            <Item key="marcus-aurelius" label="Marcus Aurelius" />,
+            <Item key="viktor-e-frankl" label="Viktor E. Frankl" />,
+            <Item key="eliud-kipchoge" label="Eliud Kipchoge" />,
           ]}
         />
 
         <ListContent
           title="My Donations"
           listItems={[
-            <Item label="Trees: 153" />,
-            <Item label="Education: €25" />,
-            <Item label="Ärzte ohne Grenzen, since 2022, €15/month" />,
-            <Item label="Rewild University, since 2019, €10/month" />,
-            <Item label="WWF Deutschland, since 2018, €5/month" />,
-            <Item label="PETA Deutschland, 2017-2019, €5/month" />,
+            <Item key="trees" label="Trees: 153" />,
+            <Item key="education" label="Education: €25" />,
+            <Item key="aerzte-ohne-grenzen" label="Ärzte ohne Grenzen, since 2022, €15/month" />,
+            <Item key="rewildu" label="Rewild University, since 2019, €10/month" />,
+            <Item key="wwf" label="WWF Deutschland, since 2018, €5/month" />,
+            <Item key="peta" label="PETA Deutschland, 2017-2019, €5/month" />,
           ]}
         />
 
         <ListContent
           title="Contact"
           listItems={[
-            <Item label="Let's talk!" to="https://cal.com/kaizheng" external={true} />,
-            <Item label="kai@kaizheng.de" to="mailto:kai@kaizheng.de" external={true} />,
-            <Item label="LinkedIn" to="https://www.linkedin.com/in/kai-zheng-8342371b3" external={true} />,
+            <Item key="cal" label="Let's talk!" to="https://cal.com/kaizheng" external={true} />,
+            <Item key="mail" label="kai@kaizheng.de" to="mailto:kai@kaizheng.de" external={true} />,
+            <Item key="linkedin" label="LinkedIn" to="https://www.linkedin.com/in/kai-zheng-8342371b3" external={true} />,
           ]}
         />
       </div>

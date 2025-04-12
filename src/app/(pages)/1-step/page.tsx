@@ -26,7 +26,7 @@ export default function OneStep() {
           <ListContent
             title="Overview"
             listItems={[
-              <video width="100%" autoPlay loop muted playsInline poster="">
+              <video key="overview" width="100%" autoPlay loop muted playsInline poster="">
                 <source src="https://res.cloudinary.com/kaizheng-de/video/upload/v1654860204/1_Step_Details_t28yqd.mov" type="video/mp4" />
               </video>
             ]}

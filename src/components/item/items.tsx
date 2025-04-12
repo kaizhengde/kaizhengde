@@ -8,7 +8,7 @@ type ItemsProps = {
 const Items: React.FC<ItemsProps> = ({ itemProps }) => {
   return (
     <div className={styles.itemsContainer}>
-      {itemProps.map((itemProp, index, _) => {
+      {itemProps.map((itemProp, index) => {
         const Separator = () => {
           switch (itemProp.type) {
             case 'h3': return <span className="separator h3">/</span>;

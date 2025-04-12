@@ -7,22 +7,26 @@ import { ItemProps } from '@/components/item/item';
 import Content from '@/components/content/content';
 import ReadingSection from '@/components/section/reading-section';
 
-interface PostProps {
-  params: {
-    slug: string;
-  };
+type PostProps = {
+  params: Promise<{ slug: string }>
 };
 
-export const generateMetadata = ({ params }: PostProps): Metadata => {
-  const postData = findPostDataBySlug(params.slug);
+export async function generateMetadata({ params }: PostProps): Promise<Metadata> {
+  const { slug } = await params
+  
+  const postData = findPostDataBySlug(slug)
+  if (!postData) { return {} }
+
   return {
-    title: postData?.title,
-    description: postData?.description
-  };
-};
+    title: postData.title,
+    description: postData.description,
+  }
+}
 
-export default function Post({ params }: PostProps) {
-  const postData = findPostDataBySlug(params.slug);
+export default async function Post({ params }: PostProps) {
+  const { slug } = await params
+
+  const postData = findPostDataBySlug(slug);
   if (!postData) { notFound() }
 
   const equivalentPosts = postsData[postData.id];
@@ -32,7 +36,7 @@ export default function Post({ params }: PostProps) {
     { type: "h5", label: postData.language.label },
     ...equivalentPosts
       .filter(p => p.language !== postData.language)
-      .map(p => ({ type: "h5" as "h5", label: p.language.label, to: `/post/${p.slug}` })),
+      .map(p => ({ type: "h5" as const, label: p.language.label, to: `/post/${p.slug}` })),
   ]
 
   return (

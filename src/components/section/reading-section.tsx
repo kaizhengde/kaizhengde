@@ -11,16 +11,14 @@ const ReadingSection: React.FC<ReadingSectionProps> = ({ children }) => {
   const divRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const calculateDynamicThreshold = () => {
-      const div = divRef.current;
-      if (div) {
-        const viewportHeight = window.innerHeight;
-        const rect = div.getBoundingClientRect();
-        const relativeHeight = rect.height / viewportHeight;
+    const currentDiv = divRef.current;
+    if (!currentDiv) return;
 
-        return relativeHeight > 1 ? 1 / relativeHeight : 1;
-      }
-      return 1;
+    const calculateDynamicThreshold = () => {
+      const viewportHeight = window.innerHeight;
+      const rect = currentDiv.getBoundingClientRect();
+      const relativeHeight = rect.height / viewportHeight;
+      return relativeHeight > 1 ? 1 / relativeHeight : 1;
     };
 
     const observer = new IntersectionObserver(
@@ -34,14 +32,10 @@ const ReadingSection: React.FC<ReadingSectionProps> = ({ children }) => {
       }
     );
 
-    if (divRef.current) {
-      observer.observe(divRef.current);
-    }
+    observer.observe(currentDiv);
 
     return () => {
-      if (divRef.current) {
-        observer.unobserve(divRef.current);
-      }
+      observer.unobserve(currentDiv);
     };
   }, []);
 
