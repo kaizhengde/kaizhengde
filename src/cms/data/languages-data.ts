@@ -10,7 +10,7 @@ const languagesData: Record<string, LanguageData> = {
     label: "Deutsch"
   },
   "cn": {
-    id: "中文",
+    id: "cn",
     label: "中文"
   }
 }
